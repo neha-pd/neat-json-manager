@@ -1,0 +1,93 @@
+[
+  {
+    "topic": "Projects Worked",
+    "subtopic": "CORE and features worked",
+    "description": "CORE is an internal desktop application used by Apple advisors to log and track customer issues coming from chat, email, and phone calls. Through CORE, advisors can document customer concerns, categorize the nature of each issue, and monitor the progress of tickets from creation to resolution.",
+    "key_points": [
+      "Internal enterprise desktop application",
+      "Used by advisors for issue tracking",
+      "Supports chat, email, and phone channels",
+      "End-to-end ticket lifecycle management"
+    ]
+  },
+  {
+    "topic": "Projects Worked",
+    "subtopic": "AI/ML Interaction Summary Feature (CORE)",
+    "description": "One major feature I worked on was an AI/ML-based interaction summary feature, which was enabled for Prime users and the chat option. If the user is inactive and the chat has ended, then a summary is generated only when the chat has ended or the chat is inactive for a long time. A message is then sent to the backend, and based on the request header, we receive the summary from the backend API. Using the session ID, I displayed the summary in the IH module (Interaction History).",
+    "key_points": [
+      "AI/ML-based feature",
+      "Triggered on chat end or long inactivity",
+      "Backend API communication using request headers",
+      "Session ID based summary mapping",
+      "Displayed in Interaction History module"
+    ]
+  },
+  {
+    "topic": "Projects Worked",
+    "subtopic": "VIMS – Visitor Management System",
+    "description": "VIMS (Visitor Management System) is internal app used by apple, but it also supports external use cases. It is used to schedule office visits and meetings, and to manage guest access across Apple buildings. VIMS acts as a central platform for organizing workplace visits efficiently. It is a multi-platform system accessed via Web, Mobile, iPad Kiosk, and Admin Portal interfaces, all of which share a single backend to ensure consistent data and access control.",
+    "key_points": [
+      "Multi-platform system (Web, Mobile, Kiosk, Admin)",
+      "Single shared backend",
+      "Manages office visits and guest access",
+      "Supports both internal and external users"
+    ]
+  },
+  {
+    "topic": "Projects Worked",
+    "subtopic": "VIMS Feature Work",
+    "description": "Feature-wise, I worked on visit scheduling with custom dates, location-based UI behavior, and notification-related flows. Most of my work involved handling complex UI state, reflecting backend validations clearly, and building reusable components like shared tables and tokenizer search to support these features across the application.",
+    "key_points": [
+      "Complex UI state handling",
+      "Backend validation reflected in UI",
+      "Reusable shared components",
+      "Visit scheduling and notification flows"
+    ]
+  },
+  {
+    "topic": "Challenges Faced",
+    "subtopic": "Accessibility Implementation",
+    "description": "One challenging situation I faced was making a search component fully accessible. At that time, I wasn't very familiar with accessibility, especially VoiceOver behavior. The component had dynamic suggestions, keyboard navigation, search and multi-select options, so making it accessible wasn't simple. I spent time understanding screen readers, collaborated with the accessibility team, added proper ARIA attributes, fixed tab order, and ensured correct focus movement. The component passed accessibility checks and gave me hands-on accessibility experience.",
+    "key_points": [
+      "Screen reader and VoiceOver support",
+      "Keyboard navigation and focus management",
+      "ARIA attributes implementation",
+      "Passed accessibility audits",
+      "Practical hands-on accessibility learning"
+    ]
+  },
+  {
+    "topic": "Testing Practices",
+    "subtopic": "Behavior-Driven Development (BDD)",
+    "description": "BDD (Behavior-Driven Development) describes the expected behavior of an application in plain language. It focuses on what the application should do rather than how it is implemented. Cucumber is commonly used for BDD.",
+    "key_points": [
+      "Behavior-focused testing approach",
+      "Plain-language test scenarios",
+      "Improves collaboration between teams",
+      "Commonly implemented using Cucumber"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "Web Application Performance",
+    "description": "I approach performance from three angles: build time, runtime, and monitoring. At build time, I reduce bundle size using code splitting, lazy loading, and tree shaking. At runtime, I avoid unnecessary re-renders and optimize API usage. For monitoring, I use DevTools and production monitoring tools.",
+    "key_points": [
+      "Build-time optimizations",
+      "Runtime performance improvements",
+      "Lazy loading and code splitting",
+      "Production monitoring and analysis"
+    ]
+  },
+  {
+    "topic": "Security",
+    "subtopic": "Cybersecurity Handling",
+    "description": "To handle cybersecurity in an application, I validate and sanitize inputs, implement secure authentication and role-based access, enforce HTTPS, encrypt sensitive data, prevent common attacks like XSS and CSRF, and use logging and monitoring to detect unusual activities.",
+    "key_points": [
+      "Input validation and sanitization",
+      "Secure authentication and authorization",
+      "HTTPS and SSL/TLS enforcement",
+      "XSS and CSRF protection",
+      "Monitoring and logging"
+    ]
+  }
+]
