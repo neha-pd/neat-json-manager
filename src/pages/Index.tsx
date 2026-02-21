@@ -1,5 +1,5 @@
-import { useState, useMemo } from "react";
-import { Plus, Database, Menu, X } from "lucide-react";
+import { useState, useMemo, useEffect } from "react";
+import { Plus, Database, Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TopicSidebar from "@/components/TopicSidebar";
 import EntryCard from "@/components/EntryCard";
@@ -12,6 +12,11 @@ const Index = () => {
   const [activeTopic, setActiveTopic] = useState<string | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [dark, setDark] = useState(() => document.documentElement.classList.contains("dark"));
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", dark);
+  }, [dark]);
 
   const topics = useMemo(() => [...new Set(data.map((d) => d.topic))], [data]);
 
@@ -51,10 +56,19 @@ const Index = () => {
             <Database className="h-5 w-5 text-primary" />
             <h1 className="font-semibold text-foreground">Knowledge Base</h1>
           </div>
-          <Button size="sm" onClick={() => setShowForm(!showForm)}>
-            <Plus className="h-4 w-4 mr-1.5" />
-            <span className="hidden sm:inline">Add Entry</span>
-          </Button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setDark(!dark)}
+              className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </button>
+            <Button size="sm" onClick={() => setShowForm(!showForm)}>
+              <Plus className="h-4 w-4 mr-1.5" />
+              <span className="hidden sm:inline">Add Entry</span>
+            </Button>
+          </div>
         </div>
       </header>
 

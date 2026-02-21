@@ -14,13 +14,16 @@ interface AddEntryFormProps {
 
 const AddEntryForm = ({ existingTopics, onAdd, onCancel }: AddEntryFormProps) => {
   const [topic, setTopic] = useState("");
+  const [newTopic, setNewTopic] = useState("");
+  const [isNewTopic, setIsNewTopic] = useState(false);
   const [subtopic, setSubtopic] = useState("");
   const [description, setDescription] = useState("");
   const [keyPointsText, setKeyPointsText] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!topic.trim() || !subtopic.trim() || !description.trim()) return;
+    const finalTopic = isNewTopic ? newTopic.trim() : topic.trim();
+    if (!finalTopic || !subtopic.trim() || !description.trim()) return;
 
     const key_points = keyPointsText
       .split("\n")
@@ -28,7 +31,7 @@ const AddEntryForm = ({ existingTopics, onAdd, onCancel }: AddEntryFormProps) =>
       .filter(Boolean);
 
     onAdd({
-      topic: topic.trim(),
+      topic: finalTopic,
       subtopic: subtopic.trim(),
       description: description.trim(),
       ...(key_points.length > 0 ? { key_points } : {}),
@@ -45,20 +48,48 @@ const AddEntryForm = ({ existingTopics, onAdd, onCancel }: AddEntryFormProps) =>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="topic">Main Topic</Label>
-        <Input
-          id="topic"
-          value={topic}
-          onChange={(e) => setTopic(e.target.value)}
-          placeholder="e.g. Projects Worked"
-          list="existing-topics"
-          required
-        />
-        <datalist id="existing-topics">
-          {existingTopics.map((t) => (
-            <option key={t} value={t} />
-          ))}
-        </datalist>
+        <Label>Main Topic</Label>
+        <div className="flex items-center gap-2 mb-2">
+          <button
+            type="button"
+            onClick={() => setIsNewTopic(false)}
+            className={`text-xs px-2.5 py-1 rounded-md font-medium transition-colors ${!isNewTopic ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground"}`}
+          >
+            Existing
+          </button>
+          <button
+            type="button"
+            onClick={() => setIsNewTopic(true)}
+            className={`text-xs px-2.5 py-1 rounded-md font-medium transition-colors ${isNewTopic ? "bg-primary text-primary-foreground" : "bg-secondary text-secondary-foreground"}`}
+          >
+            + New Topic
+          </button>
+        </div>
+        {isNewTopic ? (
+          <Input
+            id="new-topic"
+            value={newTopic}
+            onChange={(e) => setNewTopic(e.target.value)}
+            placeholder="Enter new topic name"
+            required
+          />
+        ) : (
+          <>
+            <Input
+              id="topic"
+              value={topic}
+              onChange={(e) => setTopic(e.target.value)}
+              placeholder="e.g. Projects Worked"
+              list="existing-topics"
+              required={!isNewTopic}
+            />
+            <datalist id="existing-topics">
+              {existingTopics.map((t) => (
+                <option key={t} value={t} />
+              ))}
+            </datalist>
+          </>
+        )}
       </div>
 
       <div className="space-y-2">
