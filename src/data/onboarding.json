@@ -1,0 +1,13 @@
+[
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "First 2 Days Without Team Support",
+    "description": "I'll explore the codebase, set up the environment, and go through the application and documentation like Confluence pages. I'll try to understand the project workflows, architecture and tools used, and note down any questions so I'm ready to clarify once the team is available.",
+    "key_points": [
+      "Understand the project – read documentation, architecture diagrams, and requirements",
+      "Set up the environment – clone repositories, install dependencies, and run the application locally",
+      "Explore the codebase – understand folder structure, main modules, and how components interact",
+      "Identify tools and processes – check version control, CI/CD pipelines, testing frameworks, and coding standards"
+    ]
+  }
+]

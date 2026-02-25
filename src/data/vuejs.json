@@ -1,0 +1,274 @@
+[
+  {
+    "topic": "Vue.js",
+    "subtopic": "What is Vue.js",
+    "description": "Vue.js is a progressive JavaScript framework used to build user interfaces and single-page applications. It focuses on the view layer and supports component-based architecture and reactive data binding.",
+    "key_points": [
+      "Progressive JavaScript framework",
+      "Component-based architecture",
+      "Reactive data binding",
+      "Focuses on view layer",
+      "Used for building SPAs"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Key Features of Vue.js",
+    "description": "Vue.js provides several key features including reactivity for automatic UI updates when data changes, reusable components, directives for binding values to DOM, Virtual DOM for efficient rendering, computed properties and watchers, and support for Vue Router and Pinia for state management.",
+    "key_points": [
+      "Reactivity — automatic UI updates when data changes",
+      "Components — reusable UI elements",
+      "Directives — v-if, v-model, etc.",
+      "Virtual DOM — efficient UI re-rendering",
+      "Computed properties & watchers",
+      "Vue Router & Pinia support"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Architecture",
+    "description": "Vue follows a component-based architecture and is mainly used to build Single Page Applications (SPA). In an SPA, a single HTML page is loaded initially, and the content is dynamically updated without refreshing the entire page.\n\nThe application is divided into reusable components, where each component manages its own structure, logic, and styling through the template, script, and style sections.\n\nThe application starts from the root component, App.vue, and all other components are nested inside it. For navigation, we use Vue Router, which enables seamless routing without page reloads.\n\nFor state management, at the global level we use centralized stores like Vuex or Pinia. At the component level, communication can be handled using props and events, or provide and inject when needed.\n\nAPI communication is typically handled through a service layer, commonly using libraries like Axios. Finally, the application is bundled and optimized for production using tools like Vite or Webpack.",
+    "key_points": [
+      "Component-based architecture",
+      "Single Page Application (SPA)",
+      "Root component App.vue",
+      "Vue Router for navigation",
+      "Vuex/Pinia for state management",
+      "Axios for API communication",
+      "Vite/Webpack for bundling"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Reactivity System",
+    "description": "Reactive data is data that automatically updates the UI when its value changes.\n\nVue's reactivity system is a core feature that automatically keeps the user interface (DOM) in sync with application data by detecting state changes.\n\nVue makes data reactive using Proxies (Vue 3) and Getters/Setters (Vue 2). When reactive data changes, Vue automatically updates the DOM.",
+    "key_points": [
+      "Automatic UI updates when data changes",
+      "Uses Proxies in Vue 3",
+      "Uses Getters/Setters in Vue 2",
+      "Keeps DOM in sync with data"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "ref and reactive",
+    "description": "ref is used to create reactive primitive values and requires .value to access them in JavaScript. reactive is used to create reactive objects and does not require .value. reactive works only with objects, while ref can work with both primitives and objects.",
+    "key_points": [
+      "ref for primitive values (requires .value)",
+      "reactive for objects (no .value needed)",
+      "reactive works only with objects",
+      "ref works with both primitives and objects"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Lifecycle Hooks",
+    "description": "Lifecycle hooks are methods called at different stages of a component's life.",
+    "key_points": [
+      "beforeCreate",
+      "created",
+      "beforeMount",
+      "mounted",
+      "beforeUpdate",
+      "updated",
+      "beforeUnmount / beforeDestroy",
+      "unmounted / destroyed"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue 2 vs Vue 3 Differences",
+    "description": "Options API organizes code by type like data, methods, and computed. Composition API organizes code by feature using setup(), making logic reusable and better structured for large applications.\n\nTeleport allows us to render a part of a component outside its parent DOM hierarchy, usually for modals, dialogs, or tooltips to avoid CSS and positioning issues.\n\nFragments allow a component to have multiple root elements, reducing unnecessary wrapper divs and improving cleaner HTML structure and CSS flexibility.\n\nsetup function is the entry point of the Composition API. It is used to define reactive state, computed properties, watchers, lifecycle hooks, and reusable logic using composables. It runs before the component is created and replaces the need for data and methods in the Options API.",
+    "key_points": [
+      "Options API vs Composition API",
+      "Teleport for rendering outside parent DOM",
+      "Fragments for multiple root elements",
+      "setup() function as Composition API entry point",
+      "Better code organization by feature"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "computed, watch, and watchEffect",
+    "description": "Use computed when you need to show a calculated value, and this values are cached, only recomputed when their dependencies change and it returns value.\n\nUse watch when we need to perform action when data changes. It is for side effects such as making API calls, logging. It provides access to both new and old values and executes function.\n\nwatchEffect automatically tracks reactive dependencies and runs immediately when created.\n\nIf something can be solved with computed, I prefer computed over watch, because watch introduces side effects and is generally more imperative. Computed keeps logic declarative and easier to maintain.\n\nI avoid watchEffect when I need access to old values or when I need precise control over which reactive source triggers the effect. In such cases, watch is more predictable.",
+    "key_points": [
+      "computed for calculated values (cached, declarative)",
+      "watch for side effects (access to old/new values)",
+      "watchEffect auto-tracks dependencies",
+      "Prefer computed over watch when possible",
+      "Use watch when need old values or precise control"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Directives",
+    "description": "Vue directives are special attributes that apply dynamic behavior to HTML elements by manipulating DOM. They are prefixed with v-.",
+    "key_points": [
+      "v-if / v-show for conditional rendering",
+      "v-for for list rendering",
+      "v-model for two-way binding",
+      "v-bind for attribute binding",
+      "v-on for event handling",
+      "Prefixed with v-"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "v-if vs v-show",
+    "description": "v-if removes/creates DOM elements based on condition. v-show toggles visibility with CSS (display: none). Use v-if when condition rarely changes; v-show for frequent toggles.",
+    "key_points": [
+      "v-if: removes/creates DOM elements",
+      "v-show: toggles CSS display property",
+      "v-if for rare changes",
+      "v-show for frequent toggles"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "key in v-for",
+    "description": "key is a unique identifier used by Vue to track each item in a list when rendering. It helps Vue efficiently update the DOM and prevents rendering bugs. Without key, Vue may reuse wrong elements.",
+    "key_points": [
+      "Unique identifier for list items",
+      "Helps Vue efficiently update DOM",
+      "Prevents rendering bugs",
+      "Required for proper list rendering"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Virtual DOM",
+    "description": "Virtual DOM is a lightweight copy of the real DOM. Vue compares changes in the Virtual DOM and updates only the necessary parts in the real DOM, improving performance.",
+    "key_points": [
+      "Lightweight copy of real DOM",
+      "Compares changes efficiently",
+      "Updates only necessary parts",
+      "Improves performance"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Props and Emits (Component Communication)",
+    "description": "Props are used to pass data from parent to child. Emit is used to send data from child to parent. Child cannot modify parent data directly, so it emits an event.\n\nEmitting update:modelValue creates two-way binding between parent and child.",
+    "key_points": [
+      "Props: parent to child data flow",
+      "Emit: child to parent communication",
+      "Child cannot modify parent data directly",
+      "update:modelValue for two-way binding"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Provide and Inject",
+    "description": "Provide / Inject is used to pass data deeply without prop drilling. It allows parent components to provide data that can be injected by any descendant component.",
+    "key_points": [
+      "Avoids prop drilling",
+      "Parent provides data",
+      "Any descendant can inject",
+      "Useful for deeply nested components"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Slots",
+    "description": "Slots allow parent to pass template/content into child.",
+    "key_points": [
+      "Default Slot: single content area",
+      "Named Slot: multiple content areas",
+      "Scoped Slot: child sends data to parent slot",
+      "Flexible content composition"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Templates",
+    "description": "Template is where we write the UI of the component. A template in Vue is the section where we define the HTML structure of a component. It describes how the UI should look using standard HTML along with Vue directives and data bindings. Without the template Vue wouldn't know which part represents the UI.\n\nTop-level <template> defines the UI section of the component.\n\nInner <template> acts as an invisible logical wrapper. It is mainly used with directives like v-if, v-for, or v-slot to group multiple elements without adding extra divs to the DOM.",
+    "key_points": [
+      "Defines HTML structure of component",
+      "Uses HTML with Vue directives",
+      "Top-level template for UI section",
+      "Inner template as invisible wrapper",
+      "Used with v-if, v-for, v-slot"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "SPA (Single Page Application)",
+    "description": "SPA (Single Page Application) is a web application that loads a single HTML page and dynamically updates content without reloading the entire page.",
+    "key_points": [
+      "Loads single HTML page",
+      "Dynamically updates content",
+      "No page reloads",
+      "Better user experience",
+      "Faster navigation"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Instance",
+    "description": "A Vue instance is root object created by new Vue({}) and connects the JavaScript context to the DOM. It contains data, methods, lifecycle hooks, templates, etc.",
+    "key_points": [
+      "Root object connecting JS to DOM",
+      "Contains data and methods",
+      "Includes lifecycle hooks",
+      "Manages component state"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue CLI",
+    "description": "Vue CLI is a command-line tool to scaffold, build, and manage Vue projects. It supports plugins, presets, and configuration tools.",
+    "key_points": [
+      "Command-line tool for Vue projects",
+      "Scaffolding and project setup",
+      "Plugin and preset support",
+      "npm install -g @vue/cli",
+      "vue create my-vue-app"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Components and Dynamic Components",
+    "description": "Components are reusable, independent UI blocks that contain template, logic, and styles.\n\nDynamic components allow switching between components dynamically using <component :is=\"currentComponent\" />. Used in tabs, dashboards, etc.",
+    "key_points": [
+      "Reusable UI blocks",
+      "Contains template, logic, and styles",
+      "Dynamic switching with :is",
+      "Used in tabs and dashboards"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "nextTick()",
+    "description": "nextTick() is used when you want to wait until DOM updates are completed. Vue updates DOM asynchronously, so sometimes you need nextTick.",
+    "key_points": [
+      "Waits for DOM updates to complete",
+      "Vue updates DOM asynchronously",
+      "Useful for accessing updated DOM",
+      "Common in testing and animations"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "React vs Vue",
+    "description": "React is a UI library that focuses only on the view layer, while Vue is a progressive framework that provides more built-in features. React uses JSX (HTML inside JavaScript), whereas Vue uses template syntax (HTML-based structure). Vue has a simpler learning curve and built-in reactivity, while React relies more on hooks and external libraries for state management. Both use virtual DOM and are widely used in modern frontend development.\n\nIn React, when state changes, the entire component function re-runs, but React updates only the changed DOM nodes after Virtual DOM diffing. In Vue, the reactivity system tracks dependencies, so only the affected parts of the template are updated. Both use Virtual DOM, but Vue has more fine-grained reactivity by default.",
+    "key_points": [
+      "React: UI library, Vue: progressive framework",
+      "React uses JSX, Vue uses templates",
+      "Vue has simpler learning curve",
+      "Vue has built-in reactivity",
+      "Both use Virtual DOM",
+      "Different state management approaches"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "JSX (JavaScript XML)",
+    "description": "JSX is a syntax extension for JavaScript that allows writing HTML-like code inside JavaScript. It's primarily used in React but can also be used in Vue.",
+    "key_points": [
+      "HTML inside JavaScript",
+      "Primarily used in React",
+      "Can be used in Vue",
+      "Compiled to JavaScript"
+    ]
+  }
+]

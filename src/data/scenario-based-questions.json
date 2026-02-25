@@ -1,0 +1,147 @@
+[
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "First 2 Days Without Team Support",
+    "description": "I'll explore the codebase, set up the environment, and go through the application and documentation like Confluence pages. I'll try to understand the project workflows, architecture and tools used, and note down any questions so I'm ready to clarify once the team is available.",
+    "key_points": [
+      "Understand the project – read documentation, architecture diagrams, and requirements",
+      "Set up the environment – clone repositories, install dependencies, and run the application locally",
+      "Explore the codebase – understand folder structure, main modules, and how components interact",
+      "Identify tools and processes – check version control, CI/CD pipelines, testing frameworks, and coding standards"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Handling Application Lag Without Support",
+    "description": "If a user reports lag, I'll first try to reproduce the issue and identify exactly where it's happening — whether during page load, an API call, or a specific user action. Then I'll check DevTools: for Console errors or warnings, the Network tab for API issues, and if needed, the Performance tab to look for long tasks.\n\nIf I'm unable to reproduce it on my system, I'll gather more details from the user, such as browser version, and network conditions. I'll try to replicate the same environment (using throttling). I'll also check production logs or monitoring tools to see if there are slow APIs or runtime errors.\n\nOnce I identify the root cause, I'll implement the appropriate fix.",
+    "key_points": [
+      "Reproduce the issue and identify the exact location",
+      "Check DevTools Console, Network, and Performance tabs",
+      "Gather user environment details if not reproducible",
+      "Use network throttling to replicate conditions",
+      "Check production logs and monitoring tools",
+      "Implement fix based on root cause analysis"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Proposing New Technology or Library",
+    "description": "If I find a new technology or library, I don't introduce it immediately. First, I check whether it actually solves a real problem in our project. Then I research it and, if needed, create a small demo to understand how it works and how easily it can be integrated.\n\nFor example, in one of our projects, we were using an internal date picker component, but it had accessibility issues and some UI limitations. I explored alternatives and found a suitable date picker from PrimeVue that addressed those problems. I created a small demo to show how it works and how it improves accessibility and UI.\n\nAfter discussing it with the team and explaining the benefits and trade-offs, they approved it, and we gradually replaced the old component.",
+    "key_points": [
+      "Verify it solves a real project problem",
+      "Research and understand the technology thoroughly",
+      "Create a small demo for proof of concept",
+      "Evaluate integration complexity and benefits",
+      "Present to team with clear benefits and trade-offs",
+      "Implement gradually after team approval"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Role as a Lead",
+    "description": "My role as a lead is to guide the team. I break down the work into clear tasks, set priorities, and assign responsibilities to make sure everyone knows what they need to do. I follow up on progress and ensure deadlines are met and the work is done well. I make sure the team stays on track. I also support team members, help them improve, and communicate with other teams or managers to keep everything aligned.",
+    "key_points": [
+      "Break down work into clear tasks",
+      "Set priorities and assign responsibilities",
+      "Follow up on progress and deadlines",
+      "Support and help team members improve",
+      "Communicate with other teams and managers",
+      "Keep the team aligned and on track"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Use AI Model",
+    "description": "I use AI models to make my work faster and more efficient. I use them to get quick summaries, generate ideas, create documentation, and analyze code.\n\nI usually follow a simple flow: first, plan the task, then ask for any missing details if something is not clear. After that, I review and edit the result until it meets the requirements.",
+    "key_points": [
+      "Makes work faster and more efficient",
+      "Used for quick summaries, ideas, documentation, code analysis",
+      "Flow: plan the task → ask for missing details → review and edit",
+      "Review and refine output until it meets requirements"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Working With a Difficult Team Member",
+    "description": "Fortunately, I haven't had a major conflict with a team member so far.\n\nBut if a situation like that arises, my approach would be to first have a direct and respectful conversation with the person to understand their perspective and what might be causing the issue. I would try to find a practical way to move forward.",
+    "key_points": [
+      "No major conflicts experienced so far",
+      "Approach: direct and respectful conversation first",
+      "Understand their perspective and the root cause",
+      "Find a practical way to move forward together"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "A Time You Failed and What You Learned",
+    "description": "In one project, while working on an archive feature, I initially underestimated the complexity involved. I thought it would be a simple UI change, but it required handling different user roles, edge cases, and coordination with backend APIs, which took more time than expected.\n\nFrom that experience, I learned to analyze requirements more carefully, identify dependencies early, and discuss potential complexities with the team before committing to timelines.",
+    "key_points": [
+      "Underestimated complexity of an archive feature",
+      "Required handling user roles, edge cases, and backend coordination",
+      "Took more time than expected",
+      "Learned to analyze requirements carefully before estimating",
+      "Now identify dependencies early and discuss with team first"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Meeting a Tight Deadline",
+    "description": "In one project, the launch date was moved up by about three weeks. I reviewed all tasks, prioritized the critical features, and pushed the nice-to-have items to later. We also had quick daily check-ins to resolve issues early and stayed aligned as a team. By focusing on priorities and clear communication, we were able to meet the deadline successfully.",
+    "key_points": [
+      "Launch date moved up by 3 weeks",
+      "Reviewed and prioritized critical features",
+      "Deferred nice-to-have items",
+      "Daily check-ins to resolve issues early",
+      "Met deadline through clear priorities and communication"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Taking Initiative Without Being Asked",
+    "description": "In the VIMS project, I noticed there was no proper documentation for the project setup, which made it difficult whenever a new team member joined. So I took the initiative to create a detailed setup guide on Confluence and shared it with the team. I also gave edit access so anyone could update it if there were changes. This made onboarding easier and saved time for the team in the future.",
+    "key_points": [
+      "Noticed lack of project setup documentation",
+      "Created a detailed setup guide on Confluence",
+      "Shared with the team and gave edit access",
+      "Made onboarding easier for new team members",
+      "Proactive action without being asked"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Handling Competing Priorities",
+    "description": "I had three different people all telling me their task was the most urgent, all due the same week. So I made a list, figured out how long each would actually take, and then talked to each person. It turned out two of them had more flexibility than they originally said. Once I knew that, I could plan properly and not try to do everything at once.",
+    "key_points": [
+      "Multiple urgent tasks from different people in the same week",
+      "Listed all tasks and estimated actual effort for each",
+      "Spoke with each stakeholder to understand real urgency",
+      "Found flexibility in two of the three tasks",
+      "Planned realistically once priorities were clear"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Receiving Constructive Criticism",
+    "description": "While presenting a Vue 2 to Vue 3 migration plan in a team meeting, I went into too much detail and the meeting ran longer than expected. My manager later pointed out that it could have been more concise. I realized the feedback was valid, and since then I focus on covering key points first and only go into deeper details if needed.",
+    "key_points": [
+      "Presented Vue 2 to Vue 3 migration plan in too much detail",
+      "Meeting ran over time",
+      "Manager gave feedback to be more concise",
+      "Accepted feedback and reflected on it",
+      "Now lead with key points, go deeper only if asked"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Giving Difficult Feedback",
+    "description": "A teammate kept missing details in their work and others had to clean up after them. Nobody wanted to say anything. I asked if we could chat privately and framed it as wanting to help, not criticize. I gave specific examples and asked if something was going on. It turned out they were overwhelmed with too many tasks. We worked together on prioritizing, and their work improved a lot after that.",
+    "key_points": [
+      "Teammate missing details repeatedly, others picking up the slack",
+      "Initiated a private, respectful conversation",
+      "Framed it as wanting to help, not criticize",
+      "Used specific examples to make feedback clear",
+      "Discovered they were overwhelmed — helped with prioritization",
+      "Work improved significantly after the conversation"
+    ]
+  }
+]

@@ -1,0 +1,187 @@
+[
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Frontend Architecture vs Design System vs System Design",
+    "description": "Frontend Architecture is about how the application is built — its technical structure. It includes folder structure, state management, routing, API handling, and how components are organized.\n\nDesign System is about how the application looks and feels. It defines the visual style and UI rules, including which UI components to use, typography, spacing, and colors.\n\nFrontend system design is a high-level approach to plan and structure the entire frontend application. It includes architecture for technical structure, design system for consistent UI, and also considers performance, scalability, security, and how the frontend interacts with backend APIs.",
+    "key_points": [
+      "Architecture: technical structure",
+      "Design System: visual style and UI rules",
+      "System Design: high-level planning",
+      "Includes performance, scalability, security",
+      "Frontend-backend interaction"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Structure a Large-Scale Application",
+    "description": "I use a feature-based folder structure where each module has its components, services, and state. Shared components go into a common folder. This makes it modular, scalable, and easy to maintain.\n\nFeature-based is better for large apps because all files for a feature are together. Type-based (components, services, etc.) is okay for small apps.",
+    "key_points": [
+      "Feature-based folder structure",
+      "Each module: components, services, state",
+      "Shared components in common folder",
+      "Modular and scalable",
+      "Better than type-based for large apps"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "manage shared state across multiple components/pages",
+    "description": "I use global state management like Pinia or Vuex. Local component state is used for temporary or UI-specific data.",
+    "key_points": [
+      "Global state: Pinia or Vuex",
+      "Local state: temporary or UI-specific",
+      "Clear separation of concerns"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "design the frontend to handle high traffic or large datasets",
+    "description": "I use lazy loading, code splitting, virtual scrolling, and caching. I also optimize API calls with pagination or debounce.",
+    "key_points": [
+      "Lazy loading and code splitting",
+      "Virtual scrolling for large lists",
+      "Caching strategies",
+      "Pagination or debounce for APIs"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Ensure Modularity and Reusability",
+    "description": "I break UI into small reusable components and create composables for shared logic.",
+    "key_points": [
+      "Small reusable components",
+      "Composables for shared logic",
+      "DRY principle (Don't Repeat Yourself)"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Integrate with Multiple Backend Services",
+    "description": "Create a service layer to handle API calls and separate modules for each backend service. Centralized error handling ensures consistency.",
+    "key_points": [
+      "Service layer for API calls",
+      "Separate modules per backend service",
+      "Centralized error handling",
+      "Consistent integration pattern"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Error Handling and Fallback Mechanisms",
+    "description": "I use try/catch for API calls, global error handlers, loading skeletons, and fallback UI. Tools like Sentry track runtime errors in production.",
+    "key_points": [
+      "try/catch for API calls",
+      "Global error handlers",
+      "Loading skeletons",
+      "Fallback UI",
+      "Sentry for production tracking"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Reactive Data Flow in Vue 3 with Pinia",
+    "description": "I create stores with state, actions, and getters. Components subscribe to stores and automatically update when state changes.",
+    "key_points": [
+      "Stores: state, actions, getters",
+      "Components subscribe to stores",
+      "Automatic updates on state change",
+      "Reactive data flow"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Caching handle caching API data for better performance Data",
+    "description": "Store frequently used API data in the global store or local storage and refresh it only when necessary.",
+    "key_points": [
+      "Cache in global store or localStorage",
+      "Refresh only when necessary",
+      "Improves performance",
+      "Reduces API calls"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Structure Actions and Mutations",
+    "description": "I keep actions for async calls and mutations (or direct state changes in Pinia) for state updates. I group them by feature for clarity.",
+    "key_points": [
+      "Actions for async calls",
+      "Mutations/state changes for updates",
+      "Group by feature",
+      "Clear organization"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Integrate Design System",
+    "description": "Use shared UI component library, follow style guide for colors, typography, spacing, and reuse components across app.",
+    "key_points": [
+      "Shared UI component library",
+      "Style guide: colors, typography, spacing",
+      "Reuse components",
+      "Consistent UI"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Ensure UI Consistency",
+    "description": "Define tokens (colors, spacing, font sizes) and use them in all components.",
+    "key_points": [
+      "Design tokens for colors, spacing, fonts",
+      "Use tokens in all components",
+      "Centralized theme management"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Make UI Reusable and Modular",
+    "description": "Create atomic components (Button, Input, Modal) and compose them into bigger components.",
+    "key_points": [
+      "Atomic components (Button, Input, Modal)",
+      "Compose into larger components",
+      "Atomic design principles"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Balance Custom vs Third-Party Components",
+    "description": "Use third-party for common needs (DatePicker, Charts) and custom components for branded or unique UI.",
+    "key_points": [
+      "Third-party for common components",
+      "Custom for branded/unique UI",
+      "Balance efficiency and customization"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Design for High Availability",
+    "description": "Use caching, CDNs, lazy loading, and handle network failures gracefully.",
+    "key_points": [
+      "Caching strategies",
+      "CDN for static assets",
+      "Lazy loading",
+      "Graceful network failure handling"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Handle Authentication in SPA",
+    "description": "Use JWT or session tokens stored securely (httpOnly cookies), and route guards for protected pages.",
+    "key_points": [
+      "JWT or session tokens",
+      "Secure storage (httpOnly cookies)",
+      "Route guards for protected pages",
+      "Token refresh mechanisms"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Secure API Calls",
+    "description": "Use HTTPS, tokens, rate limiting, and avoid storing sensitive data in localStorage.",
+    "key_points": [
+      "Always use HTTPS",
+      "Token-based authentication",
+      "Rate limiting",
+      "Avoid localStorage for sensitive data"
+    ]
+  }
+]

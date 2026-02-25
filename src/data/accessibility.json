@@ -1,0 +1,16 @@
+[
+  {
+    "topic": "Accessibility",
+    "subtopic": "Accessibility Best Practices",
+    "description": "I ensure accessibility by using semantic HTML elements, proper color contrast, and readable font sizes. I provide alt text for images and transcripts for videos. I make sure the application is fully keyboard navigable and screen-reader friendly. I use ARIA attributes when necessary and properly associate labels (Form Accessibility: link <label> and <input> using for and id) and aria-describedby to error messages with form inputs.\n\nSemantic HTML: I use appropriate semantic elements like <header>, <nav>, <button>, instead of generic <div>.\n\nKeyboard Accessibility: ensure full keyboard navigation (Tab, Shift+Tab, Enter, Escape) by using tabindex carefully to manage focus.\n\nARIA Attributes: aria-label, aria-describedby, aria-expanded, aria-haspopup, role",
+    "key_points": [
+      "Semantic HTML elements",
+      "Proper color contrast and font sizes",
+      "Alt text and transcripts",
+      "Full keyboard navigation",
+      "Screen reader support",
+      "ARIA attributes when necessary",
+      "Label association for forms"
+    ]
+  }
+]

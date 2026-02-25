@@ -1,0 +1,85 @@
+[
+  {
+    "topic": "Vue Router",
+    "subtopic": "What is Vue Router",
+    "description": "Vue Router is the official routing library for Vue.js that is used to build single-page applications. It allows navigation between components using URLs without reloading the page.\n\nIn Vue Router, we define routes in index.js and map each route to a component by importing it. Vue renders the matched component inside <router-view>, and we use <router-link> to navigate between routes without reloading the page.\n\nVue Router is essential to make that application feel like a real website to the user.",
+    "key_points": [
+      "Official routing library for Vue.js",
+      "Navigation without page reloads",
+      "Routes defined in index.js",
+      "Uses <router-view> and <router-link>",
+      "Essential for SPA navigation"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Why SPA Needs Vue Router",
+    "description": "Even though Vue SPA loads only one HTML page, we need Vue Router to manage navigation between different views/components, map URLs to components, handle dynamic routes, and maintain browser history for smooth navigation.\n\nWithout Vue Router, you'd have to manually show/hide components and manipulate URLs, which is error-prone and not scalable.",
+    "key_points": [
+      "Manages navigation between views",
+      "Maps URLs to components",
+      "Handles dynamic routes",
+      "Maintains browser history",
+      "Prevents manual URL manipulation"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "URL Syncing and Deep Linking",
+    "description": "Without a Router: If you are on a Profile section of your app and refresh the page, the browser will likely reset to the Home view because the URL (e.g., ://mysite.com) never changed.\n\nWith a Router: Navigating to the profile section updates the URL to ://mysite.com/profile. This allows users to bookmark specific pages or share links directly to specific content.\n\nI use Vue Router's query params and dynamic routes so users can bookmark or share exact pages.",
+    "key_points": [
+      "URL updates with navigation",
+      "Users can bookmark specific pages",
+      "Share links to specific content",
+      "Query params for state persistence",
+      "Dynamic routes for parameters"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Browser History Management",
+    "description": "Routers manage the browser's History API. This means when a user clicks the Back or Forward button, the app correctly navigates between views instead of accidentally leaving your website entirely.",
+    "key_points": [
+      "Manages browser History API",
+      "Back/Forward button navigation",
+      "Prevents leaving website accidentally",
+      "Maintains navigation state"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Dynamic Navigation and Parameters",
+    "description": "Vue Router allows you to extract the id from the URL and use it to fetch specific data. It provides navigation guards, allowing you to prevent unauthorized users from reaching certain pages (like an Admin dashboard).\n\nI use Vue Router's children for nested routes and :id params for dynamic routes.",
+    "key_points": [
+      "Extract parameters from URL",
+      "Fetch data based on route params",
+      "Navigation guards for authorization",
+      "Nested routes with children",
+      "Dynamic routes with :id"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Meta and Route Guards",
+    "description": "meta is a custom object used to store route-related data like authentication or roles.\n\nRoute guards are functions that run before route navigation and decide whether navigation is allowed or redirected, commonly used for authentication and authorization.\n\nGlobal Guards - beforeEach/afterEach\nrouter.beforeEach((to, from, next) => {})\n\nIn-Component Guards:\nbeforeRouteEnter()\nbeforeRouteUpdate()\nbeforeRouteLeave()\n\nAuth Guard: route guard used for authentication logic.\n\nI use router.beforeEach and meta fields like requiresAuth to check user permissions before navigation.\n\nMark protected routes using meta:\n{\n  path: \"/dashboard\",\n  component: Dashboard,\n  meta: { requiresAuth: true }\n}",
+    "key_points": [
+      "meta stores route-related data",
+      "Route guards control navigation",
+      "Global guards: beforeEach, afterEach",
+      "Component guards: beforeRouteEnter, Update, Leave",
+      "requiresAuth for protected routes"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Hash vs History Mode",
+    "description": "Hash mode uses # in URLs and works without server configuration, but URLs are not clean. History mode uses the HTML5 History API to provide clean URLs like /about, but the server must redirect all routes to index.html. In most modern Vue apps, history mode is preferred for cleaner URLs and better SEO.",
+    "key_points": [
+      "Hash mode: uses # in URLs, no server config needed",
+      "History mode: clean URLs, requires server redirect",
+      "History mode better for SEO",
+      "Hash mode works everywhere",
+      "Modern apps prefer history mode"
+    ]
+  }
+]

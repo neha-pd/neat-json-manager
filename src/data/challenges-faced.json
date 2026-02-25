@@ -1,0 +1,14 @@
+[
+  {
+    "topic": "Challenges Faced",
+    "subtopic": "Accessibility Implementation",
+    "description": "One challenging situation I faced was making a search component fully accessible. At that time, I wasn't very familiar with accessibility, especially VoiceOver behavior.\n\nThe component had dynamic suggestions, keyboard navigation, search and multi-select options, so making it accessible wasn't simple. I first spent time to understand the basics how screen readers work and how focus should move between elements. I also connected with the accessibility team to clarify the expected behavior.\n\nThen I updated the component by adding proper ARIA attributes, fixing the tab order, and making sure focus moved correctly between the input and dropdown options. After that, I tested component to ensure everything was announced correctly and could be used with/without a mouse.\n\nAt end, the component passed accessibility checks, and It also helped me gain practical knowledge in accessibility hands-on experience with accessibility, which I later applied to other components.",
+    "key_points": [
+      "Screen reader and VoiceOver support",
+      "Keyboard navigation and focus management",
+      "ARIA attributes implementation",
+      "Passed accessibility audits",
+      "Practical hands-on accessibility learning"
+    ]
+  }
+]

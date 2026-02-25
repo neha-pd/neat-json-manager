@@ -1,0 +1,27 @@
+[
+  {
+    "topic": "Debugging",
+    "subtopic": "How to Debug Vue Applications",
+    "description": "We used to debug using developer tools in local, for the console and network tab for API issues. And for Vue, we use Vue Devtools to inspect component state and reactivity. I also use breakpoints in the sources tab to step through the code. In production, we rely on monitoring tools like Sentry to track runtime errors and performance issues.\n\nTo check performance of application, we use the performance tab or timelines to check the page load time and size.",
+    "key_points": [
+      "Chrome DevTools: Console and Network tabs",
+      "Vue Devtools for component inspection",
+      "Breakpoints in Sources tab",
+      "Performance tab for load time analysis",
+      "Sentry for production monitoring"
+    ]
+  },
+  {
+    "topic": "Debugging",
+    "subtopic": "Production Logs vs Monitoring Tools",
+    "description": "Production logs contain detailed information such as errors and request logs, while monitoring tools provide high-level system metrics like response time, error rates. Monitoring helps detect issues, and logs help diagnose the root cause.",
+    "key_points": [
+      "splunk: prod log, monitoring: sentry, Grafana",
+      "Logs: detailed error and request information",
+      "Monitoring: high-level metrics",
+      "Monitoring detects issues",
+      "Logs diagnose root cause",
+      "Both are complementary"
+    ]
+  }
+]

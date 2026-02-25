@@ -1,0 +1,25 @@
+[
+  {
+    "topic": "Error Handling",
+    "subtopic": "Error Handling in Vue Applications",
+    "description": "Error handling is done at multiple levels. At the API level, we use Axios interceptors to handle common errors like authentication failures. At the component level, we use try/catch blocks to manage UI-specific errors. And, we use Vue's global error handler to catch unexpected runtime errors and log them to monitoring tools such as Sentry. We also manage error and loading states through Pinia or Vuex.\n\nGlobal Application Error Handling: We define it in main.js when creating the Vue app instance using app.config.errorHandler, before mounting the application.\n\nCompanies install the Sentry Vue SDK and initialize it in main.js while creating the Vue app instance.",
+    "key_points": [
+      "API level: Axios interceptors",
+      "Component level: try/catch blocks",
+      "Global error handler in main.js",
+      "Sentry for production monitoring",
+      "State management for error/loading states"
+    ]
+  },
+  {
+    "topic": "Error Handling",
+    "subtopic": "Use AbortController to Cancel Requests",
+    "description": "AbortController allows canceling pending API requests to prevent unnecessary network calls and memory leaks, especially useful when components unmount or navigation changes.",
+    "key_points": [
+      "Cancel pending API requests",
+      "Prevent memory leaks",
+      "Useful on component unmount",
+      "Helps with navigation changes"
+    ]
+  }
+]

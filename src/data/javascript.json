@@ -1,0 +1,95 @@
+[
+  {
+    "topic": "JavaScript",
+    "subtopic": "MutationObserver",
+    "description": "MutationObserver is called whenever changes happen in the DOM tree, such as node additions, removals, or attribute modifications, and triggers a callback function in response.",
+    "key_points": [
+      "Watches DOM tree changes",
+      "Detects node additions, removals, attribute modifications",
+      "Triggers callback function on changes",
+      "Useful for dynamic content monitoring"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Currying",
+    "description": "Currying is a technique where a function returns another function. It transforms a function with multiple arguments into a sequence of functions each taking a single argument.",
+    "key_points": [
+      "Function returns another function",
+      "Transforms multi-argument functions",
+      "Creates sequence of single-argument functions",
+      "Enables partial application"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "this Keyword",
+    "description": "In JavaScript, the value of this isn't fixed; it is determined by how a function is called, not where it is defined—unless you're using arrow functions.",
+    "key_points": [
+      "Value determined by how function is called",
+      "Not determined by where it's defined",
+      "Arrow functions have lexical this",
+      "Context-dependent behavior"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Call Stack",
+    "description": "The call stack is a data structure used by JavaScript (or any language) to keep track of function execution. It works like a stack (LIFO – Last In, First Out).",
+    "key_points": [
+      "Tracks function execution",
+      "LIFO (Last In, First Out) structure",
+      "Manages execution context",
+      "Stack overflow when too deep"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Event Loop",
+    "description": "Allows code execution in non blocking way. It checks the call stack and task queue, and moves tasks from the queue to the stack when the stack is empty.\n\nTask queue includes micro and macro tasks.",
+    "key_points": [
+      "Enables non-blocking code execution",
+      "Checks call stack and task queue",
+      "Moves tasks when stack is empty",
+      "Micro tasks (Promises) and macro tasks (setTimeout)"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Callback Hell",
+    "description": "A callback allows a function to call another function after finishing its work. \n\nCallback hell happens when we have many nested callbacks in JavaScript, making the code messy and hard to read. It can be solved using promises or async/await.\n\nCallback Hell Example:\ngetUser(userId, function(user) {\n  getOrders(user.id, function(orders) {\n      console.log(details);\n  });\n});\n\nPromise Solution:\ngetUser(userId)\n  .then(user => getOrders(user.id))\n  .then(details => console.log(details))\n  .catch(err => console.error(err));\n\nAsync/Await Solution:\nasync function fetchData() {\n  try {\n    const user = await getUser(userId);\n    const details = await getOrders(user.id);\n    console.log(details);\n  } catch (err) {\n    console.error(err);\n  }\n}",
+    "key_points": [
+      "A callback allows a function to call another function after finishing its work.",
+      "Nested callbacks make code messy",
+      "Hard to read and maintain",
+      "Solved with Promises",
+      "Better solved with async/await",
+      "Improves code readability"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Promises and Async/Await",
+    "description": "Promises are used to handle asynchronous operations. They either resolve with a value or reject with an error. It represents a value that may be available now, later, or never. Promises replace nested callbacks with .then() and .catch() to make code cleaner.\n\nasync/await is built on top of Promises. It makes asynchronous code look like normal synchronous code and returns a promise.\n\nasync → marks a function as asynchronous and it returns a Promise\nawait → waits for the Promise to resolve",
+    "key_points": [
+      "Promises handle async operations",
+      "Resolve with value or reject with error",
+      "Use .then() and .catch()",
+      "async/await built on Promises",
+      "Makes async code look synchronous",
+      "async functions return Promises",
+      "await waits for Promise resolution"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "async, defer, preload, prefetch",
+    "description": "async → Loads script in parallel and executes immediately after download. <script>\n\ndefer → Loads script in parallel and executes after HTML parsing. <script>\n\npreload → Downloads important resources early. <link>\n\nprefetch → Downloads future resources during idle time (low priority). <link>",
+    "key_points": [
+      "async: parallel load, immediate execution",
+      "defer: parallel load, execute after HTML parsing",
+      "preload: download important resources early",
+      "prefetch: download future resources (low priority)"
+    ]
+  }
+]

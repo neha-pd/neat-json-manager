@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "CSS",
+    "subtopic": "Responsive Website",
+    "description": "I use a mobile-first approach with flexible layouts using Flexbox and CSS Grid. I rely on relative units like %, rem, and vw instead of fixed pixels. I use media queries to adapt layouts for different screen sizes and ensure images scale properly. I also test across devices using Chrome DevTools and real devices to verify consistent behavior.\n\nI also ensure that responsiveness includes not just layout but usability — for example, touch-friendly button sizes, readable font sizes.\n\nIs responsiveness only about screen size? - No. It also includes: Device orientation, Touch interactions, Accessibility considerations.\n\nResponsiveness is not just about adapting layout to different screen sizes; it also includes performance and smooth interaction. On mobile devices especially, slower networks can impact performance. So while I use flexible layouts and media queries for responsive design, I also optimize bundle size, use lazy loading, reduce unnecessary re-renders, and optimize images. This ensures the application not only looks good on all devices but also feels fast and smooth.",
+    "key_points": [
+      "Mobile-first approach",
+      "Flexbox and CSS Grid for layouts",
+      "Relative units (%, rem, vw)",
+      "Media queries for different screen sizes",
+      "Touch-friendly and accessible",
+      "Performance optimization for mobile",
+      "Test across devices"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Mobile-First Approach",
+    "description": "Mobile-first is an approach where we design and build the application for small screens first, then progressively enhance it for larger screens using media queries with min-width. It helps prioritize essential content, improves performance for mobile users, and results in cleaner, more scalable CSS architecture.",
+    "key_points": [
+      "Design for small screens first",
+      "Progressively enhance for larger screens",
+      "Use media queries with min-width",
+      "Prioritizes essential content",
+      "Better performance for mobile",
+      "Cleaner, scalable CSS"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Image Scaling in Responsive Design",
+    "description": "Image scaling depends on container size, not the screen directly. So responsive layout techniques like Flexbox and Grid indirectly control how images scale.",
+    "key_points": [
+      "Images scale based on container size",
+      "Not directly based on screen size",
+      "Flexbox and Grid control containers",
+      "Indirect control of image scaling"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Cross-Browser Compatibility",
+    "description": "For cross-browser compatibility, I use Autoprefixer, required polyfills, and Babel to transpile modern JavaScript into backward-compatible code.",
+    "key_points": [
+      "Use Autoprefixer for CSS",
+      "Add polyfills for missing features",
+      "Babel for JavaScript transpilation",
+      "Test across browsers"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "CSS Structuring for Responsiveness",
+    "description": "I organize CSS into base/reset styles, layout styles, component styles, and themes.",
+    "key_points": [
+      "Base/reset styles",
+      "Layout styles",
+      "Component styles",
+      "Theme styles",
+      "Organized and maintainable"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Media Queries, Flexbox, and Grid",
+    "description": "Media queries decide when the layout should change based on screen size. Flexbox manages alignment and spacing in one direction. CSS Grid, on the other hand, is used to define the overall two-dimensional layout structure — rows and columns together. It is especially useful for page layouts, dashboards, or complex designs where both horizontal and vertical control are needed.",
+    "key_points": [
+      "Media queries: decide when layout changes",
+      "Flexbox: one-dimensional alignment and spacing",
+      "Grid: two-dimensional layout structure",
+      "Grid for complex layouts",
+      "All work together for responsive design"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Box Model vs Flexbox/Grid",
+    "description": "Flexbox and Grid control layout structure and alignment, while the box model controls spacing and sizing of individual elements through margin, padding, and border. They serve different purposes and work together in layout design.",
+    "key_points": [
+      "Box model: margin, padding, border",
+      "Controls spacing and sizing of elements",
+      "Flexbox/Grid: layout structure",
+      "Different purposes, work together"
+    ]
+  }
+]

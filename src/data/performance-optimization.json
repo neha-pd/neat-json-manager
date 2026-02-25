@@ -1,0 +1,77 @@
+[
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "Lazy Loading",
+    "description": "There are multiple types of lazy loading:\n\n 1. Route-level lazy loading: Most common, loads pages only when user navigates to them. This reduces the initial bundle size a lot. Example: dashboard\n\n2. Component level lazy loading: Loads heavy components only when required. We can use suspense tag also to handle async components.\nconst HeavyComponent = defineAsyncComponent(() => import('./HeavyComponent.vue'))\nExample: modals\n\n3. Image Lazy Loading: Images load only when visible in viewport.\n<img src=\"image.jpg\" loading=\"lazy\" /> or iframe\n\n4. Data Lazy Loading: Infinite scroll, pagination or load more button.\n\n5. Module / Dynamic Import Lazy Loading / Library lazy loading: Load JavaScript modules dynamically:\nbutton.addEventListener('click', async () => {\n  const module = await import('./utils.js')\n})\n\n6. Priority-Based Lazy Loading: Load critical resources first, defer non-critical ones.\nUse: async, defer, preload, prefetch\n<link rel=\"preload\" href=\"main.js\">",
+    "key_points": [
+      "Route-level: load pages on navigation",
+      "Component-level: load heavy components when needed",
+      "Image lazy loading with loading='lazy'",
+      "Data lazy loading: pagination, infinite scroll",
+      "Dynamic imports for modules",
+      "Priority-based with async, defer, preload, prefetch"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "How to Handle Performance in Web Application",
+    "description": "I approach performance from three angles: build time, runtime, and monitoring.\n\nAt the build level, we reduced the initial bundle size using code splitting, lazy loading for routes and heavy components, tree shaking, and removing unused libraries. We also implemented content-based hashing for efficient caching and optimized images using compression and WebP. Static assets were served through a CDN to improve delivery speed.\n\nAt runtime, I focused on preventing unnecessary re-renders by using computed properties instead of methods, proper keys in v-for, correct usage of v-if vs v-show, and updating only specific reactive properties rather than replacing entire objects. For large datasets, we implemented pagination or virtual scrolling, and we debounced API calls to prevent excessive network requests.\n\nFor monitoring, I used Chrome DevTools and Vue DevTools to analyze performance bottlenecks. In production, we used Sentry to track JavaScript and Vue component errors with detailed stack traces.\n\nIn VIMS specifically, these optimizations helped us load less code upfront, improve caching efficiency, and reduce unnecessary API calls, which significantly improved load time and overall UI responsiveness.",
+    "key_points": [
+      "splunk: prod log, monitoring: sentry, Grafana",
+      "Build-time optimizations: code splitting, lazy loading, tree shaking",
+      "Runtime performance: prevent unnecessary re-renders, pagination, debouncing",
+      "Monitoring: Chrome DevTools, Vue DevTools, Sentry",
+      "Asset optimization: compression, WebP, CDN",
+      "Efficient caching with content-based hashing"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "how to handle webpack bundling to minimize end user experience good",
+    "description": "First, we enable production mode in Webpack. This automatically enables optimizations like minification, tree shaking, and dead code elimination, which remove unused and unreachable code to reduce bundle size.\n\nNext, we configure code splitting using the optimization.splitChunks option. This breaks the application into smaller chunks (like vendor and common files), improving caching and reducing initial load time.\n\nFor lazy loading, we use dynamic imports (import()). This ensures components or modules are loaded only when needed, improving performance for large applications.\n\nWe also optimize assets by compressing images using tools like image-webpack-loader or by serving static assets through a CDN.\n\nTo improve caching, we use hashed filenames like [contenthash]. This prevents the browser from re-downloading unchanged files.\n\nFinally, we analyze bundle size using tools like webpack-bundle-analyzer to identify and remove unnecessary dependencies.",
+    "key_points": [
+      "Enable production mode for automatic optimizations",
+      "Configure code splitting with splitChunks",
+      "Use dynamic imports for lazy loading",
+      "Optimize assets with compression and CDN",
+      "Use contenthash for better caching",
+      "Analyze bundles with webpack-bundle-analyzer"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "What is Bundler and Why We Need It",
+    "description": "Vite or Webpack are used because browsers do not directly understand multiple module files like import/export (in older environments), .vue single-file components, SCSS, or some modern JavaScript features. At that point, we use bundlers like Vite or Webpack.\n\nA bundler takes multiple source files such as .vue components, JavaScript files, CSS/SCSS files, and assets, and combines them into optimized static files that browsers can understand.\n\nThey optimize the application by:\nMinification – removing spaces, comments, and unnecessary characters\nTree shaking – removing unused code\nCode splitting – splitting bundles into smaller chunks\nAsset optimization – compressing images and static assets\nLazy loading – loading code only when required\nCache – generating hashed filenames to enable proper browser caching",
+    "key_points": [
+      "Combines multiple source files into browser-compatible bundles",
+      "Minification and tree shaking",
+      "Code splitting and lazy loading",
+      "Asset optimization and compression",
+      "Cache management with hashed filenames"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "Code Splitting and Lazy Loading in Webpack",
+    "description": "Although bundlers generate minified static files, they don't bundle everything into a single file. Using dynamic imports, the bundler performs code splitting and creates separate chunk files. Lazy loading ensures these chunks are loaded only when needed, improving initial load performance.",
+    "key_points": [
+      "Dynamic imports trigger code splitting",
+      "Creates separate chunk files",
+      "Chunks loaded only when needed",
+      "Improves initial load performance"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "Optimize Performance Without Removing Component Code",
+    "description": "To optimize Vue performance, I use proper keys in v-for, lazy loading for routes and components, computed instead of methods, v-once for static content, debounce for API calls, and avoid large reactive objects. For large lists, I use pagination or virtual scrolling.",
+    "key_points": [
+      "Use proper keys in v-for",
+      "Lazy load routes and components",
+      "Use computed instead of methods",
+      "Apply v-once for static content",
+      "Debounce API calls",
+      "Pagination or virtual scrolling for large lists"
+    ]
+  }
+]

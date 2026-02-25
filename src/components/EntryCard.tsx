@@ -6,13 +6,19 @@ interface EntryCardProps {
 }
 
 const EntryCard = ({ entry }: EntryCardProps) => {
+  const descriptionParagraphs = entry.description.split('\n').filter(p => p.trim());
+  
   return (
     <div className="rounded-lg border bg-card p-5 transition-shadow hover:shadow-md">
       <div className="flex items-start gap-3 mb-3">
         <FileText className="h-5 w-5 text-primary mt-0.5 shrink-0" />
         <h3 className="font-semibold text-card-foreground leading-snug">{entry.subtopic}</h3>
       </div>
-      <p className="text-sm text-muted-foreground leading-relaxed ml-8">{entry.description}</p>
+      <div className="text-sm text-muted-foreground leading-relaxed ml-8 space-y-3">
+        {descriptionParagraphs.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
+      </div>
       {entry.key_points && entry.key_points.length > 0 && (
         <ul className="mt-4 ml-8 flex flex-col gap-1.5">
           {entry.key_points.map((point, i) => (

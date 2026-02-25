@@ -1,8 +1,22 @@
 [
   {
     "topic": "Projects Worked",
+    "subtopic": "My Role",
+    "description": "Hi, I have around 7+ years of experience in frontend development. My work mainly involves managing frontend workflows and ensuring the application behaves correctly while building responsive, accessible, and scalable web applications.\n\nIn a recent project, I worked directly with the client to understand requirements, coordinated with different teams, implemented features, and handled bug fixes and accessibility improvements. In another project, I translated design mockups into responsive UI, optimized performance, and enhanced the overall user experience while collaborating closely with backend and design teams.\n\nI also focus on building reusable and maintainable UI components. For example, I developed a reusable table component used across multiple screens and a tokenizer-style search component for selecting guests and locations across different workflows.\n\nScalable means that the frontend code and components are designed so they can grow easily as the application adds more features, users, or screens without needing major rewrites.\n- Reusable components: Components can be used in multiple places. Example: A table component used for guest lists, visits, reports, etc.\n- Easy to extend: If a new feature is added, you can extend the existing component instead of rewriting it.",
+    "key_points": [
+      "7+ years of frontend development experience",
+      "Builds responsive, accessible, and scalable web applications",
+      "Works directly with clients and coordinates across teams",
+      "Translates design mockups into responsive UI",
+      "Focuses on reusable and maintainable UI components",
+      "Built shared table component and tokenizer-style search",
+      "Scalable: components grow with the app without rewrites"
+    ]
+  },
+  {
+    "topic": "Projects Worked",
     "subtopic": "CORE and features worked",
-    "description": "CORE is an internal desktop application used by Apple advisors to log and track customer issues coming from chat, email, and phone calls. Through CORE, advisors can document customer concerns, categorize the nature of each issue, and monitor the progress of tickets from creation to resolution.",
+    "description": "CORE is an internal desktop application used by Apple advisors to log and track customer issues coming from chat, email, and phone calls. Through CORE, advisors can document customer concerns, categorize each issue, and monitor the progress of tickets from creation to resolution.",
     "key_points": [
       "Internal enterprise desktop application",
       "Used by advisors for issue tracking",
@@ -45,9 +59,20 @@
     ]
   },
   {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "First 2 Days Without Team Support",
+    "description": "I'll explore the codebase, set up the environment, and go through the application and documentation like Confluence pages. I'll try to understand the project workflows, architecture and tools used, and note down any questions so I'm ready to clarify once the team is available.",
+    "key_points": [
+      "Understand the project – read documentation, architecture diagrams, and requirements",
+      "Set up the environment – clone repositories, install dependencies, and run the application locally",
+      "Explore the codebase – understand folder structure, main modules, and how components interact",
+      "Identify tools and processes – check version control, CI/CD pipelines, testing frameworks, and coding standards"
+    ]
+  },
+  {
     "topic": "Challenges Faced",
     "subtopic": "Accessibility Implementation",
-    "description": "One challenging situation I faced was making a search component fully accessible. At that time, I wasn't very familiar with accessibility, especially VoiceOver behavior. The component had dynamic suggestions, keyboard navigation, search and multi-select options, so making it accessible wasn't simple. I spent time understanding screen readers, collaborated with the accessibility team, added proper ARIA attributes, fixed tab order, and ensured correct focus movement. The component passed accessibility checks and gave me hands-on accessibility experience.",
+    "description": "One challenging situation I faced was making a search component fully accessible. At that time, I wasn't very familiar with accessibility, especially VoiceOver behavior.\n\nThe component had dynamic suggestions, keyboard navigation, search and multi-select options, so making it accessible wasn't simple. I first spent time to understand the basics how screen readers work and how focus should move between elements. I also connected with the accessibility team to clarify the expected behavior.\n\nThen I updated the component by adding proper ARIA attributes, fixing the tab order, and making sure focus moved correctly between the input and dropdown options. After that, I tested component to ensure everything was announced correctly and could be used with/without a mouse.\n\nAt end, the component passed accessibility checks, and It also helped me gain practical knowledge in accessibility hands-on experience with accessibility, which I later applied to other components.",
     "key_points": [
       "Screen reader and VoiceOver support",
       "Keyboard navigation and focus management",
@@ -69,25 +94,1132 @@
   },
   {
     "topic": "Performance Optimization",
-    "subtopic": "Web Application Performance",
-    "description": "I approach performance from three angles: build time, runtime, and monitoring. At build time, I reduce bundle size using code splitting, lazy loading, and tree shaking. At runtime, I avoid unnecessary re-renders and optimize API usage. For monitoring, I use DevTools and production monitoring tools.",
+    "subtopic": "Lazy Loading",
+    "description": "There are multiple types of lazy loading:\n\n1. Route-level lazy loading: Most common, loads pages only when user navigates to them. This reduces the initial bundle size a lot. Example: dashboard\n\n2. Component level lazy loading: Loads heavy components only when required. We can use suspense tag also to handle async components.\nconst HeavyComponent = defineAsyncComponent(() => import('./HeavyComponent.vue'))\nExample: modals\n\n3. Image Lazy Loading: Images load only when visible in viewport.\n<img src=\"image.jpg\" loading=\"lazy\" /> or iframe\n\n4. Data Lazy Loading: Infinite scroll, pagination or load more button.\n\n5. Module / Dynamic Import Lazy Loading / Library lazy loading: Load JavaScript modules dynamically:\nbutton.addEventListener('click', async () => {\n  const module = await import('./utils.js')\n})\n\n6. Priority-Based Lazy Loading: Load critical resources first, defer non-critical ones.\nUse: async, defer, preload, prefetch\n<link rel=\"preload\" href=\"main.js\">",
     "key_points": [
-      "Build-time optimizations",
-      "Runtime performance improvements",
-      "Lazy loading and code splitting",
-      "Production monitoring and analysis"
+      "Route-level: load pages on navigation",
+      "Component-level: load heavy components when needed",
+      "Image lazy loading with loading='lazy'",
+      "Data lazy loading: pagination, infinite scroll",
+      "Dynamic imports for modules",
+      "Priority-based with async, defer, preload, prefetch"
     ]
   },
   {
-    "topic": "Security",
-    "subtopic": "Cybersecurity Handling",
-    "description": "To handle cybersecurity in an application, I validate and sanitize inputs, implement secure authentication and role-based access, enforce HTTPS, encrypt sensitive data, prevent common attacks like XSS and CSRF, and use logging and monitoring to detect unusual activities.",
+    "topic": "Performance Optimization",
+    "subtopic": "How to Handle Performance in Web Application",
+    "description": "I approach performance from three angles: build time, runtime, and monitoring.\n\nAt the build level, we reduced the initial bundle size using code splitting, lazy loading for routes and heavy components, tree shaking, and removing unused libraries. We also implemented content-based hashing for efficient caching and optimized images using compression and WebP. Static assets were served through a CDN to improve delivery speed.\n\nAt runtime, I focused on preventing unnecessary re-renders by using computed properties instead of methods, proper keys in v-for, correct usage of v-if vs v-show, and updating only specific reactive properties rather than replacing entire objects. For large datasets, we implemented pagination or virtual scrolling, and we debounced API calls to prevent excessive network requests.\n\nFor monitoring, I used Chrome DevTools and Vue DevTools to analyze performance bottlenecks. In production, we used Sentry to track JavaScript and Vue component errors with detailed stack traces.\n\nIn VIMS specifically, these optimizations helped us load less code upfront, improve caching efficiency, and reduce unnecessary API calls, which significantly improved load time and overall UI responsiveness.",
     "key_points": [
+      "splunk: prod log, monitoring: sentry, Grafana",
+      "Build-time optimizations: code splitting, lazy loading, tree shaking",
+      "Runtime performance: prevent unnecessary re-renders, pagination, debouncing",
+      "Monitoring: Chrome DevTools, Vue DevTools, Sentry",
+      "Asset optimization: compression, WebP, CDN",
+      "Efficient caching with content-based hashing"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "how to handle webpack bundling to minimize end user experience good",
+    "description": "First, we enable production mode in Webpack. This automatically enables optimizations like minification, tree shaking, and dead code elimination, which remove unused and unreachable code to reduce bundle size.\n\nNext, we configure code splitting using the optimization.splitChunks option. This breaks the application into smaller chunks (like vendor and common files), improving caching and reducing initial load time.\n\nFor lazy loading, we use dynamic imports (import()). This ensures components or modules are loaded only when needed, improving performance for large applications.\n\nWe also optimize assets by compressing images using tools like image-webpack-loader or by serving static assets through a CDN.\n\nTo improve caching, we use hashed filenames like [contenthash]. This prevents the browser from re-downloading unchanged files.\n\nFinally, we analyze bundle size using tools like webpack-bundle-analyzer to identify and remove unnecessary dependencies.",
+    "key_points": [
+      "Enable production mode for automatic optimizations",
+      "Configure code splitting with splitChunks",
+      "Use dynamic imports for lazy loading",
+      "Optimize assets with compression and CDN",
+      "Use contenthash for better caching",
+      "Analyze bundles with webpack-bundle-analyzer"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "What is Bundler and Why We Need It",
+    "description": "Vite or Webpack are used because browsers do not directly understand multiple module files like import/export (in older environments), .vue single-file components, SCSS, or some modern JavaScript features. At that point, we use bundlers like Vite or Webpack.\n\nA bundler takes multiple source files such as .vue components, JavaScript files, CSS/SCSS files, and assets, and combines them into optimized static files that browsers can understand.\n\nThey optimize the application by:\nMinification – removing spaces, comments, and unnecessary characters\nTree shaking – removing unused code\nCode splitting – splitting bundles into smaller chunks\nAsset optimization – compressing images and static assets\nLazy loading – loading code only when required\nCache – generating hashed filenames to enable proper browser caching",
+    "key_points": [
+      "Combines multiple source files into browser-compatible bundles",
+      "Minification and tree shaking",
+      "Code splitting and lazy loading",
+      "Asset optimization and compression",
+      "Cache management with hashed filenames"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "Code Splitting and Lazy Loading in Webpack",
+    "description": "Although bundlers generate minified static files, they don't bundle everything into a single file. Using dynamic imports, the bundler performs code splitting and creates separate chunk files. Lazy loading ensures these chunks are loaded only when needed, improving initial load performance.",
+    "key_points": [
+      "Dynamic imports trigger code splitting",
+      "Creates separate chunk files",
+      "Chunks loaded only when needed",
+      "Improves initial load performance"
+    ]
+  },
+  {
+    "topic": "Performance Optimization",
+    "subtopic": "Optimize Performance Without Removing Component Code",
+    "description": "To optimize Vue performance, I use proper keys in v-for, lazy loading for routes and components, computed instead of methods, v-once for static content, debounce for API calls, and avoid large reactive objects. For large lists, I use pagination or virtual scrolling.",
+    "key_points": [
+      "Use proper keys in v-for",
+      "Lazy load routes and components",
+      "Use computed instead of methods",
+      "Apply v-once for static content",
+      "Debounce API calls",
+      "Pagination or virtual scrolling for large lists"
+    ]
+  },
+  {
+    "topic": " Cybersecurity Security",
+    "subtopic": "Cybersecurity Handling",
+    "description": "To handle cybersecurity in an application, I validate and sanitize inputs, implement secure authentication and role-based access, enforce HTTPS, encrypt sensitive data, keep dependencies updated, prevent common attacks like XSS/CSRF, and use monitoring tools to detect unusual activities (splunk, Sentry). I also follow regular security reviews (sonarqube) and best practices to minimize vulnerabilities.\n\nSanitizing inputs means cleaning or filtering user data before using it, to prevent attacks (sql injection- inserting malicious sql code to input fields).\n\nSecure Authentication - strong password, jwt token, Multi-Factor Authentication.\n\nEnforce HTTPS - HTTPS ensures that data between the client (browser) and server is encrypted. By install an SSL/TLS certificate on the server, configure the web server to redirect all HTTP requests to HTTPS, optionally force HTTPS in the application code.\n\nCross-Site Scripting (XSS) / CSRF (Cross-Site Request Forgery) - To prevent XSS, I sanitize inputs, avoid unsafe rendering (like v-html in Vue), and use Content Security Policy. To prevent CSRF, I use CSRF tokens and validate all sensitive requests.",
+    "key_points": [
+      "Best Practices : Implementing input validation and output encoding, keeping dependencies updated ,Using secure authentication methods like OAuth 2.0 or JSON Web Token",
       "Input validation and sanitization",
       "Secure authentication and authorization",
       "HTTPS and SSL/TLS enforcement",
       "XSS and CSRF protection",
-      "Monitoring and logging"
+      "Monitoring and logging",
+      "Keep dependencies updated",
+      "Regular security reviews"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Handling Application Lag Without Support",
+    "description": "If a user reports lag, I'll first try to reproduce the issue and identify exactly where it's happening — whether during page load, an API call, or a specific user action. Then I'll check DevTools: for Console errors or warnings, the Network tab for API issues, and if needed, the Performance tab to look for long tasks.\n\nIf I'm unable to reproduce it on my system, I'll gather more details from the user, such as browser version, and network conditions. I'll try to replicate the same environment (using throttling). I'll also check production logs or monitoring tools to see if there are slow APIs or runtime errors.\n\nOnce I identify the root cause, I'll implement the appropriate fix.",
+    "key_points": [
+      "Reproduce the issue and identify the exact location",
+      "Check DevTools Console, Network, and Performance tabs",
+      "Gather user environment details if not reproducible",
+      "Use network throttling to replicate conditions",
+      "Check production logs and monitoring tools",
+      "Implement fix based on root cause analysis"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Proposing New Technology or Library",
+    "description": "If I find a new technology or library, I don't introduce it immediately. First, I check whether it actually solves a real problem in our project. Then I research it and, if needed, create a small demo to understand how it works and how easily it can be integrated.\n\nFor example, in one of our projects, we were using an internal date picker component, but it had accessibility issues and some UI limitations. I explored alternatives and found a suitable date picker from PrimeVue that addressed those problems. I created a small demo to show how it works and how it improves accessibility and UI.\n\nAfter discussing it with the team and explaining the benefits and trade-offs, they approved it, and we gradually replaced the old component.",
+    "key_points": [
+      "Verify it solves a real project problem",
+      "Research and understand the technology thoroughly",
+      "Create a small demo for proof of concept",
+      "Evaluate integration complexity and benefits",
+      "Present to team with clear benefits and trade-offs",
+      "Implement gradually after team approval"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Role as a Lead",
+    "description": "My role as a lead is to guide the team. I break down the work into clear tasks, set priorities, and assign responsibilities to make sure everyone knows what they need to do. I follow up on progress and ensure deadlines are met and the work is done well. I make sure the team stays on track. I also support team members, help them improve, and communicate with other teams or managers to keep everything aligned.",
+    "key_points": [
+      "Break down work into clear tasks",
+      "Set priorities and assign responsibilities",
+      "Follow up on progress and deadlines",
+      "Support and help team members improve",
+      "Communicate with other teams and managers",
+      "Keep the team aligned and on track"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Use AI Model",
+    "description": "I use AI models to make my work faster and more efficient. I use them to get quick summaries, generate ideas, create documentation, and analyze code.\n\nI usually follow a simple flow: first, plan the task, then ask for any missing details if something is not clear. After that, I review and edit the result until it meets the requirements.",
+    "key_points": [
+      "Makes work faster and more efficient",
+      "Used for quick summaries, ideas, documentation, code analysis",
+      "Flow: plan the task → ask for missing details → review and edit",
+      "Review and refine output until it meets requirements"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Working With a Difficult Team Member",
+    "description": "Fortunately, I haven't had a major conflict with a team member so far.\n\nBut if a situation like that arises, my approach would be to first have a direct and respectful conversation with the person to understand their perspective and what might be causing the issue. I would try to find a practical way to move forward.",
+    "key_points": [
+      "No major conflicts experienced so far",
+      "Approach: direct and respectful conversation first",
+      "Understand their perspective and the root cause",
+      "Find a practical way to move forward together"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "A Time You Failed and What You Learned",
+    "description": "In one project, while working on an archive feature, I initially underestimated the complexity involved. I thought it would be a simple UI change, but it required handling different user roles, edge cases, and coordination with backend APIs, which took more time than expected.\n\nFrom that experience, I learned to analyze requirements more carefully, identify dependencies early, and discuss potential complexities with the team before committing to timelines.",
+    "key_points": [
+      "Underestimated complexity of an archive feature",
+      "Required handling user roles, edge cases, and backend coordination",
+      "Took more time than expected",
+      "Learned to analyze requirements carefully before estimating",
+      "Now identify dependencies early and discuss with team first"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Meeting a Tight Deadline",
+    "description": "In one project, the launch date was moved up by about three weeks. I reviewed all tasks, prioritized the critical features, and pushed the nice-to-have items to later. We also had quick daily check-ins to resolve issues early and stayed aligned as a team. By focusing on priorities and clear communication, we were able to meet the deadline successfully.",
+    "key_points": [
+      "Launch date moved up by 3 weeks",
+      "Reviewed and prioritized critical features",
+      "Deferred nice-to-have items",
+      "Daily check-ins to resolve issues early",
+      "Met deadline through clear priorities and communication"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Taking Initiative Without Being Asked",
+    "description": "In the VIMS project, I noticed there was no proper documentation for the project setup, which made it difficult whenever a new team member joined. So I took the initiative to create a detailed setup guide on Confluence and shared it with the team. I also gave edit access so anyone could update it if there were changes. This made onboarding easier and saved time for the team in the future.",
+    "key_points": [
+      "Noticed lack of project setup documentation",
+      "Created a detailed setup guide on Confluence",
+      "Shared with the team and gave edit access",
+      "Made onboarding easier for new team members",
+      "Proactive action without being asked"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Handling Competing Priorities",
+    "description": "I had three different people all telling me their task was the most urgent, all due the same week. So I made a list, figured out how long each would actually take, and then talked to each person. It turned out two of them had more flexibility than they originally said. Once I knew that, I could plan properly and not try to do everything at once.",
+    "key_points": [
+      "Multiple urgent tasks from different people in the same week",
+      "Listed all tasks and estimated actual effort for each",
+      "Spoke with each stakeholder to understand real urgency",
+      "Found flexibility in two of the three tasks",
+      "Planned realistically once priorities were clear"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Receiving Constructive Criticism",
+    "description": "While presenting a Vue 2 to Vue 3 migration plan in a team meeting, I went into too much detail and the meeting ran longer than expected. My manager later pointed out that it could have been more concise. I realized the feedback was valid, and since then I focus on covering key points first and only go into deeper details if needed.",
+    "key_points": [
+      "Presented Vue 2 to Vue 3 migration plan in too much detail",
+      "Meeting ran over time",
+      "Manager gave feedback to be more concise",
+      "Accepted feedback and reflected on it",
+      "Now lead with key points, go deeper only if asked"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Giving Difficult Feedback",
+    "description": "A teammate kept missing details in their work and others had to clean up after them. Nobody wanted to say anything. I asked if we could chat privately and framed it as wanting to help, not criticize. I gave specific examples and asked if something was going on. It turned out they were overwhelmed with too many tasks. We worked together on prioritizing, and their work improved a lot after that.",
+    "key_points": [
+      "Teammate missing details repeatedly, others picking up the slack",
+      "Initiated a private, respectful conversation",
+      "Framed it as wanting to help, not criticize",
+      "Used specific examples to make feedback clear",
+      "Discovered they were overwhelmed — helped with prioritization",
+      "Work improved significantly after the conversation"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "What is Vue.js",
+    "description": "Vue.js is a progressive JavaScript framework used to build user interfaces and single-page applications. It focuses on the view layer and supports component-based architecture and reactive data binding.",
+    "key_points": [
+      "Progressive JavaScript framework",
+      "Component-based architecture",
+      "Reactive data binding",
+      "Focuses on view layer",
+      "Used for building SPAs"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Key Features of Vue.js",
+    "description": "Vue.js provides several key features including reactivity for automatic UI updates when data changes, reusable components, directives for binding values to DOM, Virtual DOM for efficient rendering, computed properties and watchers, and support for Vue Router and Pinia for state management.",
+    "key_points": [
+      "Reactivity — automatic UI updates when data changes",
+      "Components — reusable UI elements",
+      "Directives — v-if, v-model, etc.",
+      "Virtual DOM — efficient UI re-rendering",
+      "Computed properties & watchers",
+      "Vue Router & Pinia support"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Architecture",
+    "description": "Vue follows a component-based architecture and is mainly used to build Single Page Applications (SPA). In an SPA, a single HTML page is loaded initially, and the content is dynamically updated without refreshing the entire page.\n\nThe application is divided into reusable components, where each component manages its own structure, logic, and styling through the template, script, and style sections.\n\nThe application starts from the root component, App.vue, and all other components are nested inside it. For navigation, we use Vue Router, which enables seamless routing without page reloads.\n\nFor state management, at the global level we use centralized stores like Vuex or Pinia. At the component level, communication can be handled using props and events, or provide and inject when needed.\n\nAPI communication is typically handled through a service layer, commonly using libraries like Axios. Finally, the application is bundled and optimized for production using tools like Vite or Webpack.",
+    "key_points": [
+      "Component-based architecture",
+      "Single Page Application (SPA)",
+      "Root component App.vue",
+      "Vue Router for navigation",
+      "Vuex/Pinia for state management",
+      "Axios for API communication",
+      "Vite/Webpack for bundling"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Reactivity System",
+    "description": "Reactive data is data that automatically updates the UI when its value changes.\n\nVue's reactivity system is a core feature that automatically keeps the user interface (DOM) in sync with application data by detecting state changes.\n\nVue makes data reactive using Proxies (Vue 3) and Getters/Setters (Vue 2). When reactive data changes, Vue automatically updates the DOM.",
+    "key_points": [
+      "Automatic UI updates when data changes",
+      "Uses Proxies in Vue 3",
+      "Uses Getters/Setters in Vue 2",
+      "Keeps DOM in sync with data"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "ref and reactive",
+    "description": "ref is used to create reactive primitive values and requires .value to access them in JavaScript. reactive is used to create reactive objects and does not require .value. reactive works only with objects, while ref can work with both primitives and objects.",
+    "key_points": [
+      "ref for primitive values (requires .value)",
+      "reactive for objects (no .value needed)",
+      "reactive works only with objects",
+      "ref works with both primitives and objects"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Lifecycle Hooks",
+    "description": "Lifecycle hooks are methods called at different stages of a component's life.",
+    "key_points": [
+      "beforeCreate",
+      "created",
+      "beforeMount",
+      "mounted",
+      "beforeUpdate",
+      "updated",
+      "beforeUnmount / beforeDestroy",
+      "unmounted / destroyed"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue 2 vs Vue 3 Differences",
+    "description": "Options API organizes code by type like data, methods, and computed. Composition API organizes code by feature using setup(), making logic reusable and better structured for large applications.\n\nTeleport allows us to render a part of a component outside its parent DOM hierarchy, usually for modals, dialogs, or tooltips to avoid CSS and positioning issues.\n\nFragments allow a component to have multiple root elements, reducing unnecessary wrapper divs and improving cleaner HTML structure and CSS flexibility.\n\nsetup function is the entry point of the Composition API. It is used to define reactive state, computed properties, watchers, lifecycle hooks, and reusable logic using composables. It runs before the component is created and replaces the need for data and methods in the Options API.",
+    "key_points": [
+      "Options API vs Composition API",
+      "Teleport for rendering outside parent DOM",
+      "Fragments for multiple root elements",
+      "setup() function as Composition API entry point",
+      "Better code organization by feature"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "computed, watch, and watchEffect",
+    "description": "Use computed when you need to show a calculated value, and this values are cached, only recomputed when their dependencies change and it returns value.\n\nUse watch when we need to perform action when data changes. It is for side effects such as making API calls, logging. It provides access to both new and old values and executes function.\n\nwatchEffect automatically tracks reactive dependencies and runs immediately when created.\n\nIf something can be solved with computed, I prefer computed over watch, because watch introduces side effects and is generally more imperative. Computed keeps logic declarative and easier to maintain.\n\nI avoid watchEffect when I need access to old values or when I need precise control over which reactive source triggers the effect. In such cases, watch is more predictable.",
+    "key_points": [
+      "computed for calculated values (cached, declarative)",
+      "watch for side effects (access to old/new values)",
+      "watchEffect auto-tracks dependencies",
+      "Prefer computed over watch when possible",
+      "Use watch when need old values or precise control"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Directives",
+    "description": "Vue directives are special attributes that apply dynamic behavior to HTML elements by manipulating DOM. They are prefixed with v-.",
+    "key_points": [
+      "v-if / v-show for conditional rendering",
+      "v-for for list rendering",
+      "v-model for two-way binding",
+      "v-bind for attribute binding",
+      "v-on for event handling",
+      "Prefixed with v-"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "v-if vs v-show",
+    "description": "v-if removes/creates DOM elements based on condition. v-show toggles visibility with CSS (display: none). Use v-if when condition rarely changes; v-show for frequent toggles.",
+    "key_points": [
+      "v-if: removes/creates DOM elements",
+      "v-show: toggles CSS display property",
+      "v-if for rare changes",
+      "v-show for frequent toggles"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "key in v-for",
+    "description": "key is a unique identifier used by Vue to track each item in a list when rendering. It helps Vue efficiently update the DOM and prevents rendering bugs. Without key, Vue may reuse wrong elements.",
+    "key_points": [
+      "Unique identifier for list items",
+      "Helps Vue efficiently update DOM",
+      "Prevents rendering bugs",
+      "Required for proper list rendering"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Virtual DOM",
+    "description": "Virtual DOM is a lightweight copy of the real DOM. Vue compares changes in the Virtual DOM and updates only the necessary parts in the real DOM, improving performance.",
+    "key_points": [
+      "Lightweight copy of real DOM",
+      "Compares changes efficiently",
+      "Updates only necessary parts",
+      "Improves performance"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Props and Emits (Component Communication)",
+    "description": "Props are used to pass data from parent to child. Emit is used to send data from child to parent. Child cannot modify parent data directly, so it emits an event.\n\nEmitting update:modelValue creates two-way binding between parent and child.",
+    "key_points": [
+      "Props: parent to child data flow",
+      "Emit: child to parent communication",
+      "Child cannot modify parent data directly",
+      "update:modelValue for two-way binding"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Provide and Inject",
+    "description": "Provide / Inject is used to pass data deeply without prop drilling. It allows parent components to provide data that can be injected by any descendant component.",
+    "key_points": [
+      "Avoids prop drilling",
+      "Parent provides data",
+      "Any descendant can inject",
+      "Useful for deeply nested components"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Slots",
+    "description": "Slots allow parent to pass template/content into child.",
+    "key_points": [
+      "Default Slot: single content area",
+      "Named Slot: multiple content areas",
+      "Scoped Slot: child sends data to parent slot",
+      "Flexible content composition"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Templates",
+    "description": "Template is where we write the UI of the component. A template in Vue is the section where we define the HTML structure of a component. It describes how the UI should look using standard HTML along with Vue directives and data bindings. Without the template Vue wouldn't know which part represents the UI.\n\nTop-level <template> defines the UI section of the component.\n\nInner <template> acts as an invisible logical wrapper. It is mainly used with directives like v-if, v-for, or v-slot to group multiple elements without adding extra divs to the DOM.",
+    "key_points": [
+      "Defines HTML structure of component",
+      "Uses HTML with Vue directives",
+      "Top-level template for UI section",
+      "Inner template as invisible wrapper",
+      "Used with v-if, v-for, v-slot"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "SPA (Single Page Application)",
+    "description": "SPA (Single Page Application) is a web application that loads a single HTML page and dynamically updates content without reloading the entire page.",
+    "key_points": [
+      "Loads single HTML page",
+      "Dynamically updates content",
+      "No page reloads",
+      "Better user experience",
+      "Faster navigation"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue Instance",
+    "description": "A Vue instance is root object created by new Vue({}) and connects the JavaScript context to the DOM. It contains data, methods, lifecycle hooks, templates, etc.",
+    "key_points": [
+      "Root object connecting JS to DOM",
+      "Contains data and methods",
+      "Includes lifecycle hooks",
+      "Manages component state"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Vue CLI",
+    "description": "Vue CLI is a command-line tool to scaffold, build, and manage Vue projects. It supports plugins, presets, and configuration tools.",
+    "key_points": [
+      "Command-line tool for Vue projects",
+      "Scaffolding and project setup",
+      "Plugin and preset support",
+      "npm install -g @vue/cli",
+      "vue create my-vue-app"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "Components and Dynamic Components",
+    "description": "Components are reusable, independent UI blocks that contain template, logic, and styles.\n\nDynamic components allow switching between components dynamically using <component :is=\"currentComponent\" />. Used in tabs, dashboards, etc.",
+    "key_points": [
+      "Reusable UI blocks",
+      "Contains template, logic, and styles",
+      "Dynamic switching with :is",
+      "Used in tabs and dashboards"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "nextTick()",
+    "description": "nextTick() is used when you want to wait until DOM updates are completed. Vue updates DOM asynchronously, so sometimes you need nextTick.",
+    "key_points": [
+      "Waits for DOM updates to complete",
+      "Vue updates DOM asynchronously",
+      "Useful for accessing updated DOM",
+      "Common in testing and animations"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "React vs Vue",
+    "description": "React is a UI library that focuses only on the view layer, while Vue is a progressive framework that provides more built-in features. React uses JSX (HTML inside JavaScript), whereas Vue uses template syntax (HTML-based structure). Vue has a simpler learning curve and built-in reactivity, while React relies more on hooks and external libraries for state management. Both use virtual DOM and are widely used in modern frontend development.\n\nIn React, when state changes, the entire component function re-runs, but React updates only the changed DOM nodes after Virtual DOM diffing. In Vue, the reactivity system tracks dependencies, so only the affected parts of the template are updated. Both use Virtual DOM, but Vue has more fine-grained reactivity by default.",
+    "key_points": [
+      "React: UI library, Vue: progressive framework",
+      "React uses JSX, Vue uses templates",
+      "Vue has simpler learning curve",
+      "Vue has built-in reactivity",
+      "Both use Virtual DOM",
+      "Different state management approaches"
+    ]
+  },
+  {
+    "topic": "Vue.js",
+    "subtopic": "JSX (JavaScript XML)",
+    "description": "JSX is a syntax extension for JavaScript that allows writing HTML-like code inside JavaScript. It's primarily used in React but can also be used in Vue.",
+    "key_points": [
+      "HTML inside JavaScript",
+      "Primarily used in React",
+      "Can be used in Vue",
+      "Compiled to JavaScript"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "What is Vue Router",
+    "description": "Vue Router is the official routing library for Vue.js that is used to build single-page applications. It allows navigation between components using URLs without reloading the page.\n\nIn Vue Router, we define routes in index.js and map each route to a component by importing it. Vue renders the matched component inside <router-view>, and we use <router-link> to navigate between routes without reloading the page.\n\nVue Router is essential to make that application feel like a real website to the user.",
+    "key_points": [
+      "Official routing library for Vue.js",
+      "Navigation without page reloads",
+      "Routes defined in index.js",
+      "Uses <router-view> and <router-link>",
+      "Essential for SPA navigation"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Why SPA Needs Vue Router",
+    "description": "Even though Vue SPA loads only one HTML page, we need Vue Router to manage navigation between different views/components, map URLs to components, handle dynamic routes, and maintain browser history for smooth navigation.\n\nWithout Vue Router, you'd have to manually show/hide components and manipulate URLs, which is error-prone and not scalable.",
+    "key_points": [
+      "Manages navigation between views",
+      "Maps URLs to components",
+      "Handles dynamic routes",
+      "Maintains browser history",
+      "Prevents manual URL manipulation"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "URL Syncing and Deep Linking",
+    "description": "Without a Router: If you are on a Profile section of your app and refresh the page, the browser will likely reset to the Home view because the URL (e.g., ://mysite.com) never changed.\n\nWith a Router: Navigating to the profile section updates the URL to ://mysite.com/profile. This allows users to bookmark specific pages or share links directly to specific content.\n\nI use Vue Router's query params and dynamic routes so users can bookmark or share exact pages.",
+    "key_points": [
+      "URL updates with navigation",
+      "Users can bookmark specific pages",
+      "Share links to specific content",
+      "Query params for state persistence",
+      "Dynamic routes for parameters"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Browser History Management",
+    "description": "Routers manage the browser's History API. This means when a user clicks the Back or Forward button, the app correctly navigates between views instead of accidentally leaving your website entirely.",
+    "key_points": [
+      "Manages browser History API",
+      "Back/Forward button navigation",
+      "Prevents leaving website accidentally",
+      "Maintains navigation state"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Dynamic Navigation and Parameters",
+    "description": "Vue Router allows you to extract the id from the URL and use it to fetch specific data. It provides navigation guards, allowing you to prevent unauthorized users from reaching certain pages (like an Admin dashboard).\n\nI use Vue Router's children for nested routes and :id params for dynamic routes.",
+    "key_points": [
+      "Extract parameters from URL",
+      "Fetch data based on route params",
+      "Navigation guards for authorization",
+      "Nested routes with children",
+      "Dynamic routes with :id"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Meta and Route Guards",
+    "description": "meta is a custom object used to store route-related data like authentication or roles.\n\nRoute guards are functions that run before route navigation and decide whether navigation is allowed or redirected, commonly used for authentication and authorization.\n\nGlobal Guards - beforeEach/afterEach\nrouter.beforeEach((to, from, next) => {})\n\nIn-Component Guards:\nbeforeRouteEnter()\nbeforeRouteUpdate()\nbeforeRouteLeave()\n\nAuth Guard: route guard used for authentication logic.\n\nI use router.beforeEach and meta fields like requiresAuth to check user permissions before navigation.\n\nMark protected routes using meta:\n{\n  path: \"/dashboard\",\n  component: Dashboard,\n  meta: { requiresAuth: true }\n}",
+    "key_points": [
+      "meta stores route-related data",
+      "Route guards control navigation",
+      "Global guards: beforeEach, afterEach",
+      "Component guards: beforeRouteEnter, Update, Leave",
+      "requiresAuth for protected routes"
+    ]
+  },
+  {
+    "topic": "Vue Router",
+    "subtopic": "Hash vs History Mode",
+    "description": "Hash mode uses # in URLs and works without server configuration, but URLs are not clean. History mode uses the HTML5 History API to provide clean URLs like /about, but the server must redirect all routes to index.html. In most modern Vue apps, history mode is preferred for cleaner URLs and better SEO.",
+    "key_points": [
+      "Hash mode: uses # in URLs, no server config needed",
+      "History mode: clean URLs, requires server redirect",
+      "History mode better for SEO",
+      "Hash mode works everywhere",
+      "Modern apps prefer history mode"
+    ]
+  },
+  {
+    "topic": "Error Handling",
+    "subtopic": "Error Handling in Vue Applications",
+    "description": "Error handling is done at multiple levels. At the API level, we use Axios interceptors to handle common errors like authentication failures. At the component level, we use try/catch blocks to manage UI-specific errors. And, we use Vue's global error handler to catch unexpected runtime errors and log them to monitoring tools such as Sentry. We also manage error and loading states through Pinia or Vuex.\n\nGlobal Application Error Handling: We define it in main.js when creating the Vue app instance using app.config.errorHandler, before mounting the application.\n\nCompanies install the Sentry Vue SDK and initialize it in main.js while creating the Vue app instance.",
+    "key_points": [
+      "API level: Axios interceptors",
+      "Component level: try/catch blocks",
+      "Global error handler in main.js",
+      "Sentry for production monitoring",
+      "State management for error/loading states"
+    ]
+  },
+  {
+    "topic": "Error Handling",
+    "subtopic": "Use AbortController to Cancel Requests",
+    "description": "AbortController allows canceling pending API requests to prevent unnecessary network calls and memory leaks, especially useful when components unmount or navigation changes.",
+    "key_points": [
+      "Cancel pending API requests",
+      "Prevent memory leaks",
+      "Useful on component unmount",
+      "Helps with navigation changes"
+    ]
+  },
+  {
+    "topic": "Debugging",
+    "subtopic": "How to Debug Vue Applications",
+    "description": "We used to debug using developer tools in local, for the console and network tab for API issues. And for Vue, we use Vue Devtools to inspect component state and reactivity. I also use breakpoints in the sources tab to step through the code. In production, we rely on monitoring tools like Sentry to track runtime errors and performance issues.\n\nTo check performance of application, we use the performance tab or timelines to check the page load time and size.",
+    "key_points": [
+      "Chrome DevTools: Console and Network tabs",
+      "Vue Devtools for component inspection",
+      "Breakpoints in Sources tab",
+      "Performance tab for load time analysis",
+      "Sentry for production monitoring"
+    ]
+  },
+  {
+    "topic": "Debugging",
+    "subtopic": "Production Logs vs Monitoring Tools",
+    "description": "Production logs contain detailed information such as errors and request logs, while monitoring tools provide high-level system metrics like response time, error rates. Monitoring helps detect issues, and logs help diagnose the root cause.",
+    "key_points": [
+      "splunk: prod log, monitoring: sentry, Grafana",
+      "Logs: detailed error and request information",
+      "Monitoring: high-level metrics",
+      "Monitoring detects issues",
+      "Logs diagnose root cause",
+      "Both are complementary"
+    ]
+  },
+  {
+    "topic": "Accessibility",
+    "subtopic": "Accessibility Best Practices",
+    "description": "I ensure accessibility by using semantic HTML elements, proper color contrast, and readable font sizes. I provide alt text for images and transcripts for videos. I make sure the application is fully keyboard navigable and screen-reader friendly. I use ARIA attributes when necessary and properly associate labels (Form Accessibility: link <label> and <input> using for and id) and aria-describedby to error messages with form inputs.\n\nSemantic HTML: I use appropriate semantic elements like <header>, <nav>, <button>, instead of generic <div>.\n\nKeyboard Accessibility: ensure full keyboard navigation (Tab, Shift+Tab, Enter, Escape) by using tabindex carefully to manage focus.\n\nARIA Attributes: aria-label, aria-describedby, aria-expanded, aria-haspopup, role",
+    "key_points": [
+      "Semantic HTML elements",
+      "Proper color contrast and font sizes",
+      "Alt text and transcripts",
+      "Full keyboard navigation",
+      "Screen reader support",
+      "ARIA attributes when necessary",
+      "Label association for forms"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "MutationObserver",
+    "description": "MutationObserver is called whenever changes happen in the DOM tree, such as node additions, removals, or attribute modifications, and triggers a callback function in response.",
+    "key_points": [
+      "Watches DOM tree changes",
+      "Detects node additions, removals, attribute modifications",
+      "Triggers callback function on changes",
+      "Useful for dynamic content monitoring"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Currying",
+    "description": "Currying is a technique where a function returns another function. It transforms a function with multiple arguments into a sequence of functions each taking a single argument.",
+    "key_points": [
+      "Function returns another function",
+      "Transforms multi-argument functions",
+      "Creates sequence of single-argument functions",
+      "Enables partial application"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "this Keyword",
+    "description": "In JavaScript, the value of this isn't fixed; it is determined by how a function is called, not where it is defined—unless you're using arrow functions.",
+    "key_points": [
+      "Value determined by how function is called",
+      "Not determined by where it's defined",
+      "Arrow functions have lexical this",
+      "Context-dependent behavior"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Call Stack",
+    "description": "The call stack is a data structure used by JavaScript (or any language) to keep track of function execution. It works like a stack (LIFO – Last In, First Out).",
+    "key_points": [
+      "Tracks function execution",
+      "LIFO (Last In, First Out) structure",
+      "Manages execution context",
+      "Stack overflow when too deep"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Event Loop",
+    "description": "Allows code execution in non blocking way. It checks the call stack and task queue, and moves tasks from the queue to the stack when the stack is empty.\n\nTask queue includes micro and macro tasks.",
+    "key_points": [
+      "Enables non-blocking code execution",
+      "Checks call stack and task queue",
+      "Moves tasks when stack is empty",
+      "Micro tasks (Promises) and macro tasks (setTimeout)"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Callback Hell",
+    "description": "A callback allows a function to call another function after finishing its work. \n\n Callback hell happens when we have many nested callbacks in JavaScript, making the code messy and hard to read. It can be solved using promises or async/await.\n\nCallback Hell Example:\ngetUser(userId, function(user) {\n  getOrders(user.id, function(orders) {\n      console.log(details);\n  });\n});\n\nPromise Solution:\ngetUser(userId)\n  .then(user => getOrders(user.id))\n  .then(details => console.log(details))\n  .catch(err => console.error(err));\n\nAsync/Await Solution:\nasync function fetchData() {\n  try {\n    const user = await getUser(userId);\n    const details = await getOrders(user.id);\n    console.log(details);\n  } catch (err) {\n    console.error(err);\n  }\n}",
+    "key_points": [
+      "A callback allows a function to call another function after finishing its work.",
+      "Nested callbacks make code messy",
+      "Hard to read and maintain",
+      "Solved with Promises",
+      "Better solved with async/await",
+      "Improves code readability"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "Promises and Async/Await",
+    "description": "Promises are used to handle asynchronous operations. They either resolve with a value or reject with an error. It represents a value that may be available now, later, or never. Promises replace nested callbacks with .then() and .catch() to make code cleaner.\n\nasync/await is built on top of Promises. It makes asynchronous code look like normal synchronous code and returns a promise.\n\nasync → marks a function as asynchronous and it returns a Promise\nawait → waits for the Promise to resolve",
+    "key_points": [
+      "Promises handle async operations",
+      "Resolve with value or reject with error",
+      "Use .then() and .catch()",
+      "async/await built on Promises",
+      "Makes async code look synchronous",
+      "async functions return Promises",
+      "await waits for Promise resolution"
+    ]
+  },
+  {
+    "topic": "JavaScript",
+    "subtopic": "async, defer, preload, prefetch",
+    "description": "async → Loads script in parallel and executes immediately after download. <script>\n\ndefer → Loads script in parallel and executes after HTML parsing. <script>\n\npreload → Downloads important resources early. <link>\n\nprefetch → Downloads future resources during idle time (low priority). <link>",
+    "key_points": [
+      "async: parallel load, immediate execution",
+      "defer: parallel load, execute after HTML parsing",
+      "preload: download important resources early",
+      "prefetch: download future resources (low priority)"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Responsive Website",
+    "description": "I use a mobile-first approach with flexible layouts using Flexbox and CSS Grid. I rely on relative units like %, rem, and vw instead of fixed pixels. I use media queries to adapt layouts for different screen sizes and ensure images scale properly. I also test across devices using Chrome DevTools and real devices to verify consistent behavior.\n\nI also ensure that responsiveness includes not just layout but usability — for example, touch-friendly button sizes, readable font sizes.\n\nIs responsiveness only about screen size? - No. It also includes: Device orientation, Touch interactions, Accessibility considerations.\n\nResponsiveness is not just about adapting layout to different screen sizes; it also includes performance and smooth interaction. On mobile devices especially, slower networks can impact performance. So while I use flexible layouts and media queries for responsive design, I also optimize bundle size, use lazy loading, reduce unnecessary re-renders, and optimize images. This ensures the application not only looks good on all devices but also feels fast and smooth.",
+    "key_points": [
+      "Mobile-first approach",
+      "Flexbox and CSS Grid for layouts",
+      "Relative units (%, rem, vw)",
+      "Media queries for different screen sizes",
+      "Touch-friendly and accessible",
+      "Performance optimization for mobile",
+      "Test across devices"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Mobile-First Approach",
+    "description": "Mobile-first is an approach where we design and build the application for small screens first, then progressively enhance it for larger screens using media queries with min-width. It helps prioritize essential content, improves performance for mobile users, and results in cleaner, more scalable CSS architecture.",
+    "key_points": [
+      "Design for small screens first",
+      "Progressively enhance for larger screens",
+      "Use media queries with min-width",
+      "Prioritizes essential content",
+      "Better performance for mobile",
+      "Cleaner, scalable CSS"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Image Scaling in Responsive Design",
+    "description": "Image scaling depends on container size, not the screen directly. So responsive layout techniques like Flexbox and Grid indirectly control how images scale.",
+    "key_points": [
+      "Images scale based on container size",
+      "Not directly based on screen size",
+      "Flexbox and Grid control containers",
+      "Indirect control of image scaling"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Cross-Browser Compatibility",
+    "description": "For cross-browser compatibility, I use Autoprefixer, required polyfills, and Babel to transpile modern JavaScript into backward-compatible code.",
+    "key_points": [
+      "Use Autoprefixer for CSS",
+      "Add polyfills for missing features",
+      "Babel for JavaScript transpilation",
+      "Test across browsers"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "CSS Structuring for Responsiveness",
+    "description": "I organize CSS into base/reset styles, layout styles, component styles, and themes.",
+    "key_points": [
+      "Base/reset styles",
+      "Layout styles",
+      "Component styles",
+      "Theme styles",
+      "Organized and maintainable"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Media Queries, Flexbox, and Grid",
+    "description": "Media queries decide when the layout should change based on screen size. Flexbox manages alignment and spacing in one direction. CSS Grid, on the other hand, is used to define the overall two-dimensional layout structure — rows and columns together. It is especially useful for page layouts, dashboards, or complex designs where both horizontal and vertical control are needed.",
+    "key_points": [
+      "Media queries: decide when layout changes",
+      "Flexbox: one-dimensional alignment and spacing",
+      "Grid: two-dimensional layout structure",
+      "Grid for complex layouts",
+      "All work together for responsive design"
+    ]
+  },
+  {
+    "topic": "CSS",
+    "subtopic": "Box Model vs Flexbox/Grid",
+    "description": "Flexbox and Grid control layout structure and alignment, while the box model controls spacing and sizing of individual elements through margin, padding, and border. They serve different purposes and work together in layout design.",
+    "key_points": [
+      "Box model: margin, padding, border",
+      "Controls spacing and sizing of elements",
+      "Flexbox/Grid: layout structure",
+      "Different purposes, work together"
+    ]
+  },
+  {
+    "topic": "Deployment",
+    "subtopic": "Deployment Process",
+    "description": "We follow a three-stage branching strategy: dev, UAT, and prod. Each branch maps to its respective environment.\n\nWhen code is merged, the CI pipeline runs automatically based on a YAML configuration. It installs dependencies, executes tests, builds the production artifact, creates a Docker image, and pushes it to a container registry.\n\nThe CD pipeline then deploys the image using Kubernetes deployment YAML files to the appropriate environment. UAT and Production deployments require manual approval to ensure controlled releases.\n\nPost-deployment, we monitor logs and performance metrics using Splunk and Sentry to quickly detect and resolve issues.",
+    "key_points": [
+      "Three-stage branching: dev, UAT, prod",
+      "CI pipeline: install, test, build, Docker image",
+      "CD pipeline: Kubernetes deployment",
+      "Manual approval for UAT and Production",
+      "Post-deployment monitoring with Splunk and Sentry"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Frontend Architecture vs Design System vs System Design",
+    "description": "Frontend Architecture is about how the application is built — its technical structure. It includes folder structure, state management, routing, API handling, and how components are organized.\n\nDesign System is about how the application looks and feels. It defines the visual style and UI rules, including which UI components to use, typography, spacing, and colors.\n\nFrontend system design is a high-level approach to plan and structure the entire frontend application. It includes architecture for technical structure, design system for consistent UI, and also considers performance, scalability, security, and how the frontend interacts with backend APIs.",
+    "key_points": [
+      "Architecture: technical structure",
+      "Design System: visual style and UI rules",
+      "System Design: high-level planning",
+      "Includes performance, scalability, security",
+      "Frontend-backend interaction"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Structure a Large-Scale Application",
+    "description": "I use a feature-based folder structure where each module has its components, services, and state. Shared components go into a common folder. This makes it modular, scalable, and easy to maintain.\n\nFeature-based is better for large apps because all files for a feature are together. Type-based (components, services, etc.) is okay for small apps.",
+    "key_points": [
+      "Feature-based folder structure",
+      "Each module: components, services, state",
+      "Shared components in common folder",
+      "Modular and scalable",
+      "Better than type-based for large apps"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "manage shared state across multiple components/pages",
+    "description": "I use global state management like Pinia or Vuex. Local component state is used for temporary or UI-specific data.",
+    "key_points": [
+      "Global state: Pinia or Vuex",
+      "Local state: temporary or UI-specific",
+      "Clear separation of concerns"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "design the frontend to handle high traffic or large datasets",
+    "description": "I use lazy loading, code splitting, virtual scrolling, and caching. I also optimize API calls with pagination or debounce.",
+    "key_points": [
+      "Lazy loading and code splitting",
+      "Virtual scrolling for large lists",
+      "Caching strategies",
+      "Pagination or debounce for APIs"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Ensure Modularity and Reusability",
+    "description": "I break UI into small reusable components and create composables for shared logic.",
+    "key_points": [
+      "Small reusable components",
+      "Composables for shared logic",
+      "DRY principle (Don't Repeat Yourself)"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Integrate with Multiple Backend Services",
+    "description": "Create a service layer to handle API calls and separate modules for each backend service. Centralized error handling ensures consistency.",
+    "key_points": [
+      "Service layer for API calls",
+      "Separate modules per backend service",
+      "Centralized error handling",
+      "Consistent integration pattern"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Error Handling and Fallback Mechanisms",
+    "description": "I use try/catch for API calls, global error handlers, loading skeletons, and fallback UI. Tools like Sentry track runtime errors in production.",
+    "key_points": [
+      "try/catch for API calls",
+      "Global error handlers",
+      "Loading skeletons",
+      "Fallback UI",
+      "Sentry for production tracking"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Reactive Data Flow in Vue 3 with Pinia",
+    "description": "I create stores with state, actions, and getters. Components subscribe to stores and automatically update when state changes.",
+    "key_points": [
+      "Stores: state, actions, getters",
+      "Components subscribe to stores",
+      "Automatic updates on state change",
+      "Reactive data flow"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "handle caching API data for better performance API Data",
+    "description": "Store frequently used API data in the global store or local storage and refresh it only when necessary.",
+    "key_points": [
+      "Cache in global store or localStorage",
+      "Refresh only when necessary",
+      "Improves performance",
+      "Reduces API calls"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Structure Actions and Mutations",
+    "description": "I keep actions for async calls and mutations (or direct state changes in Pinia) for state updates. I group them by feature for clarity.",
+    "key_points": [
+      "Actions for async calls",
+      "Mutations/state changes for updates",
+      "Group by feature",
+      "Clear organization"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Integrate Design System",
+    "description": "Use shared UI component library, follow style guide for colors, typography, spacing, and reuse components across app.",
+    "key_points": [
+      "Shared UI component library",
+      "Style guide: colors, typography, spacing",
+      "Reuse components",
+      "Consistent UI"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Ensure UI Consistency",
+    "description": "Define tokens (colors, spacing, font sizes) and use them in all components.",
+    "key_points": [
+      "Design tokens for colors, spacing, fonts",
+      "Use tokens in all components",
+      "Centralized theme management"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Make UI Reusable and Modular",
+    "description": "Create atomic components (Button, Input, Modal) and compose them into bigger components.",
+    "key_points": [
+      "Atomic components (Button, Input, Modal)",
+      "Compose into larger components",
+      "Atomic design principles"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Balance Custom vs Third-Party Components",
+    "description": "Use third-party for common needs (DatePicker, Charts) and custom components for branded or unique UI.",
+    "key_points": [
+      "Third-party for common components",
+      "Custom for branded/unique UI",
+      "Balance efficiency and customization"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Design for High Availability",
+    "description": "Use caching, CDNs, lazy loading, and handle network failures gracefully.",
+    "key_points": [
+      "Caching strategies",
+      "CDN for static assets",
+      "Lazy loading",
+      "Graceful network failure handling"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Handle Authentication in SPA",
+    "description": "Use JWT or session tokens stored securely (httpOnly cookies), and route guards for protected pages.",
+    "key_points": [
+      "JWT or session tokens",
+      "Secure storage (httpOnly cookies)",
+      "Route guards for protected pages",
+      "Token refresh mechanisms"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Secure API Calls",
+    "description": "Use HTTPS, tokens, rate limiting, and avoid storing sensitive data in localStorage.",
+    "key_points": [
+      "Always use HTTPS",
+      "Token-based authentication",
+      "Rate limiting",
+      "Avoid localStorage for sensitive data"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "What is SSR",
+    "description": "In summary, SSR renders Vue components on the server, sends ready HTML to the browser, and then hydrates it to make it interactive. It improves SEO and initial load performance, and in production we usually implement it using Nuxt.\n\nServer-Side Rendering (SSR) means the server generates fully rendered HTML for a page before sending it to the browser. Instead of sending an empty HTML file and letting the browser build the UI using JavaScript, the server renders the Vue components into HTML and sends ready-to-display content.",
+    "key_points": [
+      "Server generates fully rendered HTML",
+      "Sends ready-to-display content to browser",
+      "Hydrates for interactivity",
+      "Improves SEO and initial load",
+      "Usually implemented with Nuxt"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "How SSR Works",
+    "description": "When a user requests a page:\n\nThe request goes to the SSR server.\nThe server creates the Vue app using createSSRApp.\nIt fetches required data from backend APIs.\nIt converts the Vue app into an HTML string using the server renderer.\nThe fully rendered HTML is sent to the browser.\nAfter that, Vue hydrates the page to make it interactive.",
+    "key_points": [
+      "Request goes to SSR server",
+      "Server creates Vue app with createSSRApp",
+      "Fetches data from backend APIs",
+      "Converts to HTML string",
+      "Sends HTML to browser",
+      "Vue hydrates for interactivity"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Ways to Implement SSR in Vue",
+    "description": "There are two main ways:\n\nUsing a framework like Nuxt 3, which handles SSR automatically.\n\nManual SSR using Node.js with @vue/server-renderer, where we configure server and client builds separately.\n\nIn real production, most companies use Nuxt because it simplifies SSR setup.",
+    "key_points": [
+      "Nuxt 3 (automatic SSR)",
+      "Manual SSR with @vue/server-renderer",
+      "Nuxt preferred in production",
+      "Simpler setup with Nuxt"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Static Site Generation (SSG)",
+    "description": "Pages are pre-rendered at build time.\n\nGood for:\nBlogs\nMarketing sites\n\nNuxt supports this too.",
+    "key_points": [
+      "Pre-rendered at build time",
+      "Good for blogs and marketing sites",
+      "Supported by Nuxt",
+      "Fast and SEO-friendly"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Why Companies Use SSR",
+    "description": "SSR improves SEO, provides faster first contentful paint, improves performance perception, and ensures search engines receive fully rendered HTML.",
+    "key_points": [
+      "Improves SEO",
+      "Faster first contentful paint",
+      "Better performance perception",
+      "Search engines get fully rendered HTML"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "How Frontend and Backend Connect",
+    "description": "In real applications, the SSR frontend and backend API are usually separate services. During server-side rendering, the SSR server fetches data from backend APIs via HTTP requests, renders the page, and sends the final HTML to the browser.",
+    "key_points": [
+      "SSR frontend and backend are separate",
+      "SSR server fetches from backend APIs",
+      "HTTP requests during rendering",
+      "Sends final HTML to browser"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Fallback Mechanisms",
+    "description": "If SSR fails or data loading fails, we can:\n\nShow an error page\nDisplay loading skeletons\nOr fallback to client-side rendering in hybrid setups\n\nFrameworks like Nuxt handle these scenarios internally.\n\nHow do you handle fallbacks when SSR fails?\nShow skeleton loaders, error pages, or fallback to client-side rendering.",
+    "key_points": [
+      "Show error page",
+      "Display loading skeletons",
+      "Fallback to client-side rendering",
+      "Nuxt handles fallbacks internally"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Convert SPA to SSR",
+    "description": "To migrate an existing Vue SPA to SSR:\n\nReplace createApp with createSSRApp\nMove data fetching from mounted() to server-compatible methods like useFetch\nAvoid browser-only APIs like window and document during server execution\nConfigure separate server and client builds\n\nIn practice, it's easier to migrate using Nuxt instead of manual SSR setup.",
+    "key_points": [
+      "Replace createApp with createSSRApp",
+      "Move data fetching to server-compatible methods",
+      "Avoid browser-only APIs on server",
+      "Configure server and client builds",
+      "Easier with Nuxt"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "What is Hydration",
+    "description": "The browser attaches JavaScript behavior to already rendered HTML.",
+    "key_points": [
+      "Attaches JS behavior to rendered HTML",
+      "Makes static HTML interactive",
+      "Client-side process",
+      "Happens after initial HTML load"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "SSR Challenges",
+    "description": "The main challenges in SSR are hydration mismatches, where the HTML generated on the server doesn't exactly match what the client renders. This can happen if we use things like Math.random() or Date.now(), and it may cause Vue to re-render or show warnings.\n\nAnother challenge is that browser-specific APIs like window, document, or localStorage are not available during server rendering, so we need to handle them carefully.\n\nAlso, debugging can be more complex because the code runs in both server and browser environments.",
+    "key_points": [
+      "Hydration mismatches",
+      "Avoid non-deterministic code (Math.random, Date.now)",
+      "Browser APIs not available on server",
+      "Complex debugging (server + browser)",
+      "Need careful error handling"
     ]
   }
 ]

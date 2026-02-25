@@ -1,0 +1,17 @@
+[
+  {
+    "topic": "Cybersecurity Security",
+    "subtopic": "Cybersecurity Handling",
+    "description": "To handle cybersecurity in an application, I validate and sanitize inputs, implement secure authentication and role-based access, enforce HTTPS, encrypt sensitive data, keep dependencies updated, prevent common attacks like XSS/CSRF, and use monitoring tools to detect unusual activities (splunk, Sentry). I also follow regular security reviews (sonarqube) and best practices to minimize vulnerabilities.\n\nSanitizing inputs means cleaning or filtering user data before using it, to prevent attacks (sql injection- inserting malicious sql code to input fields).\n\nSecure Authentication - strong password, jwt token, Multi-Factor Authentication.\n\nEnforce HTTPS - HTTPS ensures that data between the client (browser) and server is encrypted. By install an SSL/TLS certificate on the server, configure the web server to redirect all HTTP requests to HTTPS, optionally force HTTPS in the application code.\n\nCross-Site Scripting (XSS) / CSRF (Cross-Site Request Forgery) - To prevent XSS, I sanitize inputs, avoid unsafe rendering (like v-html in Vue), and use Content Security Policy. To prevent CSRF, I use CSRF tokens and validate all sensitive requests.",
+    "key_points": [
+      "Best Practices : Implementing input validation and output encoding, keeping dependencies updated ,Using secure authentication methods like OAuth 2.0 or JSON Web Token",
+      "Input validation and sanitization",
+      "Secure authentication and authorization",
+      "HTTPS and SSL/TLS enforcement",
+      "XSS and CSRF protection",
+      "Monitoring and logging",
+      "Keep dependencies updated",
+      "Regular security reviews"
+    ]
+  }
+]

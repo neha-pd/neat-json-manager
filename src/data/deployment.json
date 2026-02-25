@@ -1,0 +1,14 @@
+[
+  {
+    "topic": "Deployment",
+    "subtopic": "Deployment Process",
+    "description": "We follow a three-stage branching strategy: dev, UAT, and prod. Each branch maps to its respective environment.\n\nWhen code is merged, the CI pipeline runs automatically based on a YAML configuration. It installs dependencies, executes tests, builds the production artifact, creates a Docker image, and pushes it to a container registry.\n\nThe CD pipeline then deploys the image using Kubernetes deployment YAML files to the appropriate environment. UAT and Production deployments require manual approval to ensure controlled releases.\n\nPost-deployment, we monitor logs and performance metrics using Splunk and Sentry to quickly detect and resolve issues.",
+    "key_points": [
+      "Three-stage branching: dev, UAT, prod",
+      "CI pipeline: install, test, build, Docker image",
+      "CD pipeline: Kubernetes deployment",
+      "Manual approval for UAT and Production",
+      "Post-deployment monitoring with Splunk and Sentry"
+    ]
+  }
+]

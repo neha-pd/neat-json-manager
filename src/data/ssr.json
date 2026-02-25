@@ -1,0 +1,117 @@
+[
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "What is SSR",
+    "description": "In summary, SSR renders Vue components on the server, sends ready HTML to the browser, and then hydrates it to make it interactive. It improves SEO and initial load performance, and in production we usually implement it using Nuxt.\n\nServer-Side Rendering (SSR) means the server generates fully rendered HTML for a page before sending it to the browser. Instead of sending an empty HTML file and letting the browser build the UI using JavaScript, the server renders the Vue components into HTML and sends ready-to-display content.",
+    "key_points": [
+      "Server generates fully rendered HTML",
+      "Sends ready-to-display content to browser",
+      "Hydrates for interactivity",
+      "Improves SEO and initial load",
+      "Usually implemented with Nuxt"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "How SSR Works",
+    "description": "When a user requests a page:\n\nThe request goes to the SSR server.\nThe server creates the Vue app using createSSRApp.\nIt fetches required data from backend APIs.\nIt converts the Vue app into an HTML string using the server renderer.\nThe fully rendered HTML is sent to the browser.\nAfter that, Vue hydrates the page to make it interactive.",
+    "key_points": [
+      "Request goes to SSR server",
+      "Server creates Vue app with createSSRApp",
+      "Fetches data from backend APIs",
+      "Converts to HTML string",
+      "Sends HTML to browser",
+      "Vue hydrates for interactivity"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Ways to Implement SSR in Vue",
+    "description": "There are two main ways:\n\nUsing a framework like Nuxt 3, which handles SSR automatically.\n\nManual SSR using Node.js with @vue/server-renderer, where we configure server and client builds separately.\n\nIn real production, most companies use Nuxt because it simplifies SSR setup.",
+    "key_points": [
+      "Nuxt 3 (automatic SSR)",
+      "Manual SSR with @vue/server-renderer",
+      "Nuxt preferred in production",
+      "Simpler setup with Nuxt"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Static Site Generation (SSG)",
+    "description": "Pages are pre-rendered at build time.\n\nGood for:\nBlogs\nMarketing sites\n\nNuxt supports this too.",
+    "key_points": [
+      "Pre-rendered at build time",
+      "Good for blogs and marketing sites",
+      "Supported by Nuxt",
+      "Fast and SEO-friendly"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Why Companies Use SSR",
+    "description": "SSR improves SEO, provides faster first contentful paint, improves performance perception, and ensures search engines receive fully rendered HTML.",
+    "key_points": [
+      "Improves SEO",
+      "Faster first contentful paint",
+      "Better performance perception",
+      "Search engines get fully rendered HTML"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "How Frontend and Backend Connect",
+    "description": "In real applications, the SSR frontend and backend API are usually separate services. During server-side rendering, the SSR server fetches data from backend APIs via HTTP requests, renders the page, and sends the final HTML to the browser.",
+    "key_points": [
+      "SSR frontend and backend are separate",
+      "SSR server fetches from backend APIs",
+      "HTTP requests during rendering",
+      "Sends final HTML to browser"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Fallback Mechanisms",
+    "description": "If SSR fails or data loading fails, we can:\n\nShow an error page\nDisplay loading skeletons\nOr fallback to client-side rendering in hybrid setups\n\nFrameworks like Nuxt handle these scenarios internally.\n\nHow do you handle fallbacks when SSR fails?\nShow skeleton loaders, error pages, or fallback to client-side rendering.",
+    "key_points": [
+      "Show error page",
+      "Display loading skeletons",
+      "Fallback to client-side rendering",
+      "Nuxt handles fallbacks internally"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "Convert SPA to SSR",
+    "description": "To migrate an existing Vue SPA to SSR:\n\nReplace createApp with createSSRApp\nMove data fetching from mounted() to server-compatible methods like useFetch\nAvoid browser-only APIs like window and document during server execution\nConfigure separate server and client builds\n\nIn practice, it's easier to migrate using Nuxt instead of manual SSR setup.",
+    "key_points": [
+      "Replace createApp with createSSRApp",
+      "Move data fetching to server-compatible methods",
+      "Avoid browser-only APIs on server",
+      "Configure server and client builds",
+      "Easier with Nuxt"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "What is Hydration",
+    "description": "The browser attaches JavaScript behavior to already rendered HTML.",
+    "key_points": [
+      "Attaches JS behavior to rendered HTML",
+      "Makes static HTML interactive",
+      "Client-side process",
+      "Happens after initial HTML load"
+    ]
+  },
+  {
+    "topic": "SSR (Server-Side Rendering)",
+    "subtopic": "SSR Challenges",
+    "description": "The main challenges in SSR are hydration mismatches, where the HTML generated on the server doesn't exactly match what the client renders. This can happen if we use things like Math.random() or Date.now(), and it may cause Vue to re-render or show warnings.\n\nAnother challenge is that browser-specific APIs like window, document, or localStorage are not available during server rendering, so we need to handle them carefully.\n\nAlso, debugging can be more complex because the code runs in both server and browser environments.",
+    "key_points": [
+      "Hydration mismatches",
+      "Avoid non-deterministic code (Math.random, Date.now)",
+      "Browser APIs not available on server",
+      "Complex debugging (server + browser)",
+      "Need careful error handling"
+    ]
+  }
+]
