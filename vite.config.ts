@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   // Use '/' for user pages (username.github.io)
   // Use '/repo-name/' for project pages (username.github.io/repo-name)
-  base: "/",
+  base: "/neat-json-manager/",
   server: {
     host: "::",
     port: 8080,
