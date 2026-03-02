@@ -57,5 +57,21 @@
       "Reusable shared components",
       "Visit scheduling and notification flows"
     ]
+  },
+  {
+    "topic": "Projects Worked",
+    "subtopic": "Recurring Visit Scheduling (VIMS)",
+    "description": "In VIMS, one of the modules I worked on was the Recurring Visit Scheduling module, which allows users to create multiple visits at once instead of creating each visit manually.\n\nThe module supports three scheduling options:\n1. Single-day scheduling: The user simply selects a date and time to create a visit.\n2. Multi-day scheduling with two patterns:\n   - Custom days: Users manually select specific days (e.g., Monday, Wednesday, Friday) within a selected date range.\n   - Consecutive pattern: Users can create repeating visits over weeks, for example every Monday and Thursday for two weeks.\n\nOnce the recurrence pattern is selected, the system generates all the visit instances and displays them in a table so the user can review them before submitting.\n\nOne of the major functionalities in this module was handling overlapping visits, where only the first valid visit is accepted and any conflicting or duplicate visits are rejected.\n\nAnother major challenge was handling time zones, since Apple has buildings across many regions. A user could create a visit for a building in a different time zone, so the system had to ensure the visit time did not conflict. To solve this, the backend stored all visit times in UTC (Coordinated Universal Time), and on the frontend we converted the UTC time into the user's local time for display using the moment library. This approach ensured consistent time calculations across regions and prevented scheduling conflicts caused by timezone differences.",
+    "key_points": [
+      "Recurring Visit Scheduling module in VIMS",
+      "Three scheduling options: single-day, custom days, consecutive pattern",
+      "Custom days: manually pick specific days (e.g. Mon, Wed, Fri) in a date range",
+      "Consecutive: repeat visits over weeks (e.g. every Mon & Thu for 2 weeks)",
+      "Generated visit instances shown in a review table before submission",
+      "Overlap handling: only first valid visit accepted; conflicts/duplicates rejected",
+      "Timezone challenge: Apple buildings across multiple regions",
+      "Backend stores all times in UTC; frontend converts to local time using moment.js",
+      "Prevented cross-timezone scheduling conflicts"
+    ]
   }
 ]

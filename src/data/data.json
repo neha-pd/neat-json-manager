@@ -86,6 +86,7 @@
     "subtopic": "Behavior-Driven Development (BDD)",
     "description": "BDD (Behavior-Driven Development) describes the expected behavior of an application in plain language. It focuses on what the application should do rather than how it is implemented. Cucumber is commonly used for BDD.",
     "key_points": [
+      "Quip",
       "Behavior-focused testing approach",
       "Plain-language test scenarios",
       "Improves collaboration between teams",
