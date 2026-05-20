@@ -10,5 +10,18 @@
       "Passed accessibility audits",
       "Practical hands-on accessibility learning"
     ]
+  },
+  {
+    "topic": "Challenges Faced",
+    "subtopic": "Taking Over DMS Project Leadership Close to Production",
+    "description": "One major challenge I faced was during the DMS project when there was no proper technical lead handling the application, and ownership was moved to me close to production deployment with only around 1 to 1.5 months left. The application was in a very unstable state, and many modules were not functioning correctly.\n\nInitially, we assumed most issues were from the frontend side and that backend APIs were stable. I took ownership of grooming stories, planning the work, prioritizing critical flows, and coordinating the team to rewrite major parts of the frontend application along with new feature implementation.\n\nWe were able to stabilize the UI and prepare the application with only minor bugs remaining. However, during final workflows like shipment submission and reassignment, we discovered major backend API issues that were impacting core functionality and delaying production delivery.\n\nThe biggest challenge was communicating these unexpected dependencies and delays to stakeholders while coordinating multiple teams under tight timelines. From this experience, I learned the importance of early end-to-end integration validation, dependency tracking, and proactive risk communication instead of assuming downstream systems are stable.",
+    "key_points": [
+      "Took ownership of unstable DMS project 1-1.5 months before production",
+      "Planned work, prioritized critical flows, and coordinated UI stabilization",
+      "Discovered major backend API issues during final workflow testing",
+      "Challenging to communicate delays and coordinate teams under tight deadlines",
+      "Learned the importance of early end-to-end integration validation and dependency tracking",
+      "Learned proactive risk communication instead of assuming downstream stability"
+    ]
   }
 ]

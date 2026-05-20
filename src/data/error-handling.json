@@ -21,5 +21,18 @@
       "Useful on component unmount",
       "Helps with navigation changes"
     ]
+  },
+  {
+    "topic": "Error Handling",
+    "subtopic": "Error Handling in Vue Applications",
+    "description": "Error handling should be implemented at multiple levels to ensure application stability, security, and a smooth user experience. Common errors like authentication failures, API failures, validation issues, and runtime exceptions should be handled through centralized error handling mechanisms, middleware/interceptors, and proper exception management.\n\nWe also maintain proper error and loading states, use meaningful error responses with correct status codes, and ensure sensitive information is not exposed. For monitoring and debugging, production errors are logged using tools like Sentry or other monitoring systems to quickly identify and resolve issues.\n\nFrom a TPM perspective, I ensure teams follow standardized error handling practices so applications remain scalable, reliable, and easier to maintain across different systems and services.",
+    "key_points": [
+      "Implement error handling at multiple levels for stability, security, and UX",
+      "Handle authentication, API, validation, and runtime errors centrally via middleware/interceptors",
+      "Maintain proper error and loading states with correct HTTP status codes",
+      "Prevent sensitive information exposure in error messages",
+      "Log production errors using tools like Sentry for monitoring and debugging",
+      "TPM Perspective: Ensure teams follow standardized error handling practices for scalability and reliability"
+    ]
   }
 ]

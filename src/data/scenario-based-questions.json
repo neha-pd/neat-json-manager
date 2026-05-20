@@ -4,16 +4,16 @@
     "subtopic": "First 2 Days Without Team Support",
     "description": "I'll explore the codebase, set up the environment, and go through the application and documentation like Confluence pages. I'll try to understand the project workflows, architecture and tools used, and note down any questions so I'm ready to clarify once the team is available.",
     "key_points": [
-      "Understand the project – read documentation, architecture diagrams, and requirements",
-      "Set up the environment – clone repositories, install dependencies, and run the application locally",
-      "Explore the codebase – understand folder structure, main modules, and how components interact",
-      "Identify tools and processes – check version control, CI/CD pipelines, testing frameworks, and coding standards"
+      "Understand the project \u2013 read documentation, architecture diagrams, and requirements",
+      "Set up the environment \u2013 clone repositories, install dependencies, and run the application locally",
+      "Explore the codebase \u2013 understand folder structure, main modules, and how components interact",
+      "Identify tools and processes \u2013 check version control, CI/CD pipelines, testing frameworks, and coding standards"
     ]
   },
   {
     "topic": "Scenario-Based Questions",
     "subtopic": "Handling Application Lag Without Support",
-    "description": "If a user reports lag, I'll first try to reproduce the issue and identify exactly where it's happening — whether during page load, an API call, or a specific user action. Then I'll check DevTools: for Console errors or warnings, the Network tab for API issues, and if needed, the Performance tab to look for long tasks.\n\nIf I'm unable to reproduce it on my system, I'll gather more details from the user, such as browser version, and network conditions. I'll try to replicate the same environment (using throttling). I'll also check production logs or monitoring tools to see if there are slow APIs or runtime errors.\n\nOnce I identify the root cause, I'll implement the appropriate fix.",
+    "description": "If a user reports lag, I'll first try to reproduce the issue and identify exactly where it's happening \u2014 whether during page load, an API call, or a specific user action. Then I'll check DevTools: for Console errors or warnings, the Network tab for API issues, and if needed, the Performance tab to look for long tasks.\n\nIf I'm unable to reproduce it on my system, I'll gather more details from the user, such as browser version, and network conditions. I'll try to replicate the same environment (using throttling). I'll also check production logs or monitoring tools to see if there are slow APIs or runtime errors.\n\nOnce I identify the root cause, I'll implement the appropriate fix.",
     "key_points": [
       "Reproduce the issue and identify the exact location",
       "Check DevTools Console, Network, and Performance tabs",
@@ -56,7 +56,7 @@
     "key_points": [
       "Makes work faster and more efficient",
       "Used for quick summaries, ideas, documentation, code analysis",
-      "Flow: plan the task → ask for missing details → review and edit",
+      "Flow: plan the task \u2192 ask for missing details \u2192 review and edit",
       "Review and refine output until it meets requirements"
     ]
   },
@@ -140,8 +140,94 @@
       "Initiated a private, respectful conversation",
       "Framed it as wanting to help, not criticize",
       "Used specific examples to make feedback clear",
-      "Discovered they were overwhelmed — helped with prioritization",
+      "Discovered they were overwhelmed \u2014 helped with prioritization",
       "Work improved significantly after the conversation"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "Breaking Down Work into Tasks",
+    "description": "I break work into smaller and manageable tasks based on priority and dependencies.\nFirst, I understand the requirement with stakeholders and the development team. Then I divide the feature into user stories, UI tasks, API integration tasks, testing tasks, and deployment activities. I also estimate effort, identify blockers early, and assign tasks clearly so the team can deliver smoothly within the sprint.",
+    "key_points": [
+      "Break work into smaller, manageable tasks based on priority and dependencies",
+      "Understand requirements with stakeholders and the development team",
+      "Divide features into user stories, UI, API, testing, and deployment tasks",
+      "Estimate effort and identify blockers early",
+      "Assign tasks clearly for smooth sprint delivery"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "Conducting Sprint Planning",
+    "description": "I conduct sprint planning by first reviewing the backlog and understanding priorities. Then I break features into smaller user stories and tasks, estimate effort with the team, identify dependencies or blockers, and assign work based on team capacity and skills. I also make sure the sprint goals are clear and achievable so the team can deliver efficiently within the timeline.",
+    "key_points": [
+      "Review the backlog and understand priorities",
+      "Break features into smaller user stories and tasks",
+      "Estimate effort with the team",
+      "Identify dependencies or blockers",
+      "Assign work based on team capacity and skills",
+      "Ensure sprint goals are clear and achievable"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "Helping a Team Member Who Does Not Ask for Help",
+    "description": "I usually observe team collaboration, task progress, blockers, and changes in delivery timelines. If I notice someone struggling with dependencies, repeated issues, missed estimates, or reduced participation in discussions, I proactively connect with them to understand the challenge and provide support.\nFor example, if a developer is blocked on API integration or production issues, I step in by helping clarify requirements, coordinating with backend teams, or assisting with debugging so the sprint delivery is not impacted. I believe early support and open communication help the team work more efficiently and avoid delays.",
+    "key_points": [
+      "Observe collaboration, progress, blockers, and timelines",
+      "Spot signs like missed estimates or reduced participation",
+      "Proactively connect to understand challenges and provide support",
+      "Help clarify requirements, coordinate with backend, or assist with debugging",
+      "Believe early support and open communication prevent delays"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Why are you looking for a change currently?",
+    "description": "Recently, I joined a banking production support project where I help the team handle vulnerability changes, version upgrades, client coordination, and deployment process improvements. While working on this project, I realized I\u2019m more interested in technical product strategy, stakeholder management, and driving scalable product initiatives. With my experience working on enterprise platforms, I now want to work on product initiatives, especially in this fast-growing AI-driven technology space.",
+    "key_points": [
+      "Currently in a banking production support project",
+      "Handling vulnerability changes, version upgrades, client coordination, and deployment process improvements",
+      "Realized interest lies more in technical product strategy and stakeholder management",
+      "Desire to drive scalable product initiatives",
+      "Passionate about working in the fast-growing AI-driven technology space"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "How did you improve sprint velocity by 40%?",
+    "description": "When I joined the VIMS/DMS project, the team faced issues like unclear requirements, frequent scope changes, inconsistent coding practices, and excessive rework.\n\nI introduced multiple process improvements:\n- better sprint planning sessions\n- clearer acceptance criteria\n- backlog grooming before sprint kickoff\n- stricter code review standards\n- reusable UI patterns\n- dependency tracking across teams\n\nI also improved communication between stakeholders and developers to reduce ambiguity.\n\nAs a result, the team reduced rework significantly, improved estimation accuracy, and sprint velocity improved by around 40% over multiple release cycles.",
+    "key_points": [
+      "Identified issues: unclear requirements, scope changes, inconsistent practices, excessive rework",
+      "Introduced process improvements (sprint planning, acceptance criteria, backlog grooming)",
+      "Enforced stricter code review standards and reusable UI patterns",
+      "Tracked dependencies across teams",
+      "Improved stakeholder-developer communication to reduce ambiguity",
+      "Result: Reduced rework, improved estimation, increased velocity by ~40%"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "What is your leadership style?",
+    "description": "My leadership style is collaborative and ownership-driven.\n\nI believe in creating clarity for teams, removing blockers, encouraging open communication, and supporting team members when needed.\n\nI also focus heavily on accountability and process discipline while ensuring engineers feel empowered to contribute ideas and improvements.",
+    "key_points": [
+      "Leadership style: Collaborative and ownership-driven",
+      "Focus on clarity, removing blockers, and open communication",
+      "Support team members when needed",
+      "Emphasize accountability and process discipline",
+      "Empower engineers to contribute ideas and improvements"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "Explain your Agile planning process.",
+    "description": "My Agile planning process typically includes:\n- Backlog grooming with stakeholders\n- Requirement clarification sessions\n- Story breakdown with engineering\n- Effort estimation\n- Dependency identification\n- Sprint planning\n- Daily standups and progress tracking\n- Sprint review and retrospective\n\nI ensure stories are properly refined before entering a sprint, with clear acceptance criteria and dependency visibility.",
+    "key_points": [
+      "Backlog grooming and requirement clarification",
+      "Story breakdown, effort estimation, and dependency identification",
+      "Sprint planning, daily standups, and progress tracking",
+      "Sprint review and retrospective",
+      "Ensure stories are refined with clear acceptance criteria and dependency visibility before the sprint"
     ]
   }
 ]

@@ -2,7 +2,7 @@
   {
     "topic": "Frontend Architecture and Design",
     "subtopic": "Frontend Architecture vs Design System vs System Design",
-    "description": "Frontend Architecture is about how the application is built — its technical structure. It includes folder structure, state management, routing, API handling, and how components are organized.\n\nDesign System is about how the application looks and feels. It defines the visual style and UI rules, including which UI components to use, typography, spacing, and colors.\n\nFrontend system design is a high-level approach to plan and structure the entire frontend application. It includes architecture for technical structure, design system for consistent UI, and also considers performance, scalability, security, and how the frontend interacts with backend APIs.",
+    "description": "Frontend Architecture is about how the application is built \u2014 its technical structure. It includes folder structure, state management, routing, API handling, and how components are organized.\n\nDesign System is about how the application looks and feels. It defines the visual style and UI rules, including which UI components to use, typography, spacing, and colors.\n\nFrontend system design is a high-level approach to plan and structure the entire frontend application. It includes architecture for technical structure, design system for consistent UI, and also considers performance, scalability, security, and how the frontend interacts with backend APIs.",
     "key_points": [
       "Architecture: technical structure",
       "Design System: visual style and UI rules",
@@ -182,6 +182,33 @@
       "Token-based authentication",
       "Rate limiting",
       "Avoid localStorage for sensitive data"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Considerations for Designing a Scalable Web Application",
+    "description": "When designing a scalable web application, I focus on creating a reusable and modular architecture so new features can be added easily as the business grows, efficient API integration, optimized database and data flow, performance tuning, caching, lazy loading, security (sanitising html tags) and proper error handling, responsive UI performance.\nI also ensure maintainable code standards, CI/CD practices, security, and smooth collaboration between teams so the application can handle increasing users, features, and business requirements without affecting performance or stability.\n\nFor example, in the Apple VIMS & DMS platforms, I helped improve scalability by creating reusable frontend components, defining clear API contracts, improving code quality standards, and optimizing application performance with better state handling and lazy loading. This reduced duplicate development effort and helped the application support multiple global users.",
+    "key_points": [
+      "Reusable and modular architecture for easy feature addition",
+      "Efficient API integration and data flow",
+      "Performance tuning, caching, and lazy loading",
+      "Proper error handling and responsive UI",
+      "Maintainable code standards and CI/CD practices",
+      "Example: Apple VIMS & DMS platforms improvements in components and APIs"
+    ]
+  },
+  {
+    "topic": "Frontend Architecture and Design",
+    "subtopic": "Working on API Design and Building APIs",
+    "description": "Yes, I have worked closely on API design and API integration in my projects.\nI helped define API contracts, request/response structures, validation handling, and frontend-backend integration requirements. I collaborated with backend teams to ensure APIs were scalable, secure, and supported smooth data flow and application performance.\nAPI contracts means a clear agreement between frontend and backend teams on how the API will work.\nFor example, if the frontend sends a request to get product details, the API contract defines what request should be sent and what exact response structure the backend will return. This helps both teams work independently and avoid integration issues.\nSwagger is used to define API contracts and Postman for testing APIs.\n\nIt means I worked with backend teams to design APIs in a way that they could handle more users, stay secure, and transfer data efficiently without slowing down the application.\n\nFor example, in the Apple VIMS & DMS platforms, we had APIs that returned large amounts of facility and asset data for global users. I worked with the backend team to optimize the API response structure so the frontend received only the required data instead of the complete dataset.\nWe also introduced pagination and lazy loading to avoid loading everything at once. For security, APIs were protected with authentication and role-based access so only authorized users could access specific data.\nThis improved application performance, reduced page load time, and helped the platform support multiple users and large-scale deployments more efficiently.",
+    "key_points": [
+      "Helped define API contracts, request/response structures, and validation",
+      "Collaborated with backend teams for scalable, secure, and efficient APIs",
+      "API contracts provide clear agreement on requests and responses (Swagger, Postman)",
+      "Optimized API response structures to send only required data",
+      "Introduced pagination and lazy loading for large datasets",
+      "Ensured API security with authentication and role-based access",
+      "Example: Apple VIMS & DMS platforms optimization for global users"
     ]
   }
 ]

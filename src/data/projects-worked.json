@@ -2,8 +2,17 @@
   {
     "topic": "Projects Worked",
     "subtopic": "My Role",
-    "description": "Hi, I have around 7+ years of experience in frontend development. My work mainly involves managing frontend workflows and ensuring the application behaves correctly while building responsive, accessible, and scalable web applications.\n\nIn a recent project, I worked directly with the client to understand requirements, coordinated with different teams, implemented features, and handled bug fixes and accessibility improvements. In another project, I translated design mockups into responsive UI, optimized performance, and enhanced the overall user experience while collaborating closely with backend and design teams.\n\nI also focus on building reusable and maintainable UI components. For example, I developed a reusable table component used across multiple screens and a tokenizer-style search component for selecting guests and locations across different workflows.\n\nScalable means that the frontend code and components are designed so they can grow easily as the application adds more features, users, or screens without needing major rewrites.\n- Reusable components: Components can be used in multiple places. Example: A table component used for guest lists, visits, reports, etc.\n- Easy to extend: If a new feature is added, you can extend the existing component instead of rewriting it.",
+    "description": "Hi, I\u2019m Neha, and I have around 8 years of overall experience, with the last few years focused more on Technical Product Associate responsibilities along with technical leadership.\nCurrently, I work on enterprise applications where my role involves working closely with business stakeholders, development teams, QA and designers to understand requirements, plan features, and ensure successful delivery.\nI\u2019ve been actively involved in requirement gathering, backlog discussions, sprint planning, API contract discussions, stakeholder coordination, and leading Agile ceremonies. I also help bridge the gap between business and engineering teams by translating business requirements into technical solutions.\nEarlier in my career, I was mainly focused on development, but over time my role evolved more toward product coordination, delivery ownership, and cross-functional collaboration.",
     "key_points": [
+      "8 years of overall experience with technical leadership",
+      "Focus on Technical Product Associate responsibilities",
+      "Collaborates with stakeholders, dev, QA, and design teams",
+      "Requirement gathering, backlog, sprint planning, and Agile ceremonies",
+      "Translates business requirements into technical solutions",
+      "Transitioned from development to product coordination and delivery ownership"
+    ],
+    "_description_old": "Hi, I have around 7+ years of experience in frontend development. My work mainly involves managing frontend workflows and ensuring the application behaves correctly while building responsive, accessible, and scalable web applications.\n\nIn a recent project, I worked directly with the client to understand requirements, coordinated with different teams, implemented features, and handled bug fixes and accessibility improvements. In another project, I translated design mockups into responsive UI, optimized performance, and enhanced the overall user experience while collaborating closely with backend and design teams.\n\nI also focus on building reusable and maintainable UI components. For example, I developed a reusable table component used across multiple screens and a tokenizer-style search component for selecting guests and locations across different workflows.\n\nScalable means that the frontend code and components are designed so they can grow easily as the application adds more features, users, or screens without needing major rewrites.\n- Reusable components: Components can be used in multiple places. Example: A table component used for guest lists, visits, reports, etc.\n- Easy to extend: If a new feature is added, you can extend the existing component instead of rewriting it.",
+    "_key_points_old": [
       "7+ years of frontend development experience",
       "Builds responsive, accessible, and scalable web applications",
       "Works directly with clients and coordinates across teams",
@@ -16,12 +25,19 @@
   {
     "topic": "Projects Worked",
     "subtopic": "CORE and features worked",
-    "description": "CORE is an internal desktop application used by Apple advisors to log and track customer issues coming from chat, email, and phone calls. Through CORE, advisors can document customer concerns, categorize each issue, and monitor the progress of tickets from creation to resolution.",
+    "description": "CORE is an internal desktop application used by Apple advisors to log and track customer issues coming from chat, email, and phone calls. Through CORE, advisors can document customer concerns, categorize each issue, and monitor the progress of tickets from creation to resolution.\n\nMy role includes both technical leadership and product ownership responsibilities. On the technical side, I lead frontend feature delivery using Vue 3 and coordinate API integrations with backend teams.\n\nFrom a product perspective, I work closely with stakeholders to understand pain points, analyze Radar analytics data, prioritize backlog items, and convert requirements into actionable user stories.\n\nI also facilitate Agile ceremonies, manage sprint planning discussions, and ensure alignment between engineering and business teams.",
     "key_points": [
       "Internal enterprise desktop application",
       "Used by advisors for issue tracking",
       "Supports chat, email, and phone channels",
-      "End-to-end ticket lifecycle management"
+      "End-to-end ticket lifecycle management",
+      "Technical leadership and product ownership responsibilities",
+      "Lead frontend feature delivery using Vue 3",
+      "Coordinate API integrations with backend teams",
+      "Work with stakeholders to understand pain points and analyze Radar analytics data",
+      "Prioritize backlog items and convert requirements into actionable user stories",
+      "Facilitate Agile ceremonies and manage sprint planning discussions",
+      "Ensure alignment between engineering and business teams"
     ]
   },
   {
@@ -38,7 +54,7 @@
   },
   {
     "topic": "Projects Worked",
-    "subtopic": "VIMS – Visitor Management System",
+    "subtopic": "VIMS \u2013 Visitor Management System",
     "description": "VIMS (Visitor Management System) is internal app used by apple, but it also supports external use cases. It is used to schedule office visits and meetings, and to manage guest access across Apple buildings. VIMS acts as a central platform for organizing workplace visits efficiently. It is a multi-platform system accessed via Web, Mobile, iPad Kiosk, and Admin Portal interfaces, all of which share a single backend to ensure consistent data and access control.",
     "key_points": [
       "Multi-platform system (Web, Mobile, Kiosk, Admin)",

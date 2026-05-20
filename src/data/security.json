@@ -16,7 +16,7 @@
   },
   {
     "topic": "Cybersecurity Security",
-    "subtopic": "Authentication – IDMS",
+    "subtopic": "Authentication \u2013 IDMS",
     "description": "In our system, authentication and user identity were handled through IDMS, which is Apple's Identity Management System. When a user logs in, IDMS authenticates the user and provides identity details such as user information, roles, and group memberships. These roles and groups are then used by the application to implement authorization, ensuring that users only access features they are permitted to use.\n\nSince permissions are managed centrally in IDMS, it simplifies security management and maintains consistency across all internal Apple applications. This integration also improves security because authentication is handled by a trusted identity provider while the application focuses on enforcing role-based access within the system.",
     "key_points": [
       "IDMS is Apple's Identity Management System used for authentication",
@@ -33,15 +33,27 @@
     "subtopic": "Frontend & Backend Security (Authentication & Authorization)",
     "description": "Security in our application is handled at both the frontend and backend levels.\n\nAuthentication is managed through Apple IDMS (Identity Management System), where users log in and receive an authentication token that is sent with API requests.\n\nAuthorization is enforced on the backend using Role-Based Access Control (RBAC), which ensures users can only access resources permitted by their roles. For example, only authorized users can create visits for Priority-1 buildings.\n\nAll API communication is secured using HTTPS.\n\nOn the frontend, we follow secure coding practices such as:\n- Validating user inputs\n- Avoiding unsafe rendering like v-html to prevent XSS attacks\n- Validating file uploads such as CSV imports for correct type and format\n\nWe also monitor production issues using tools like Sentry for frontend error tracking and Splunk for centralized logging, ensuring potential issues and vulnerabilities are detected and addressed quickly.\n\nKey distinction:\n- Authentication: verifies who the user is\n- Authorization (role): determines what the authenticated user is allowed to do",
     "key_points": [
-      "Authentication via Apple IDMS – token sent with every API request",
-      "Authorization via RBAC on the backend – role-based resource access",
+      "Authentication via Apple IDMS \u2013 token sent with every API request",
+      "Authorization via RBAC on the backend \u2013 role-based resource access",
       "Example: only authorized users can create visits for Priority-1 buildings",
       "All API communication secured over HTTPS",
       "Frontend: input validation and avoiding v-html to prevent XSS",
-      "File upload validation – correct type and format (e.g. CSV imports)",
+      "File upload validation \u2013 correct type and format (e.g. CSV imports)",
       "Sentry for frontend error tracking",
       "Splunk for centralized logging and monitoring",
       "Authentication = who you are; Authorization = what you can do"
+    ]
+  },
+  {
+    "topic": "Cybersecurity Security",
+    "subtopic": "Security Implementation",
+    "description": "Security can be implemented by using authentication and authorization, secure API communication, encrypted data transfer using HTTPS, input validation, and role-based access control. We also follow secure coding practices, protect sensitive user and payment data, and prevent vulnerabilities like SQL injection or XSS attacks.\nFor example, in an e-commerce application, only authorized users should access admin features, payment data should be encrypted, APIs should be secured with tokens, and user inputs should be validated before storing or processing data.",
+    "key_points": [
+      "Authentication, authorization, and role-based access control (RBAC)",
+      "Secure API communication and encrypted data transfer (HTTPS)",
+      "Input validation to prevent SQL injection or XSS attacks",
+      "Protect sensitive user and payment data",
+      "Example: E-commerce app securing admin features and encrypting payment data"
     ]
   }
 ]

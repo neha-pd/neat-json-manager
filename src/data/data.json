@@ -2,8 +2,17 @@
   {
     "topic": "Projects Worked",
     "subtopic": "My Role",
-    "description": "Hi, I have around 7+ years of experience in frontend development. My work mainly involves managing frontend workflows and ensuring the application behaves correctly while building responsive, accessible, and scalable web applications.\n\nIn a recent project, I worked directly with the client to understand requirements, coordinated with different teams, implemented features, and handled bug fixes and accessibility improvements. In another project, I translated design mockups into responsive UI, optimized performance, and enhanced the overall user experience while collaborating closely with backend and design teams.\n\nI also focus on building reusable and maintainable UI components. For example, I developed a reusable table component used across multiple screens and a tokenizer-style search component for selecting guests and locations across different workflows.\n\nScalable means that the frontend code and components are designed so they can grow easily as the application adds more features, users, or screens without needing major rewrites.\n- Reusable components: Components can be used in multiple places. Example: A table component used for guest lists, visits, reports, etc.\n- Easy to extend: If a new feature is added, you can extend the existing component instead of rewriting it.",
+    "description": "Hi, I\u2019m Neha, and I have around 8 years of overall experience, with the last few years focused more on Technical Product Associate responsibilities along with technical leadership.\nCurrently, I work on enterprise applications where my role involves working closely with business stakeholders, development teams, QA and designers to understand requirements, plan features, and ensure successful delivery.\nI\u2019ve been actively involved in requirement gathering, backlog discussions, sprint planning, API contract discussions, stakeholder coordination, and leading Agile ceremonies. I also help bridge the gap between business and engineering teams by translating business requirements into technical solutions.\nEarlier in my career, I was mainly focused on development, but over time my role evolved more toward product coordination, delivery ownership, and cross-functional collaboration.",
     "key_points": [
+      "8 years of overall experience with technical leadership",
+      "Focus on Technical Product Associate responsibilities",
+      "Collaborates with stakeholders, dev, QA, and design teams",
+      "Requirement gathering, backlog, sprint planning, and Agile ceremonies",
+      "Translates business requirements into technical solutions",
+      "Transitioned from development to product coordination and delivery ownership"
+    ],
+    "_description_old": "Hi, I have around 7+ years of experience in frontend development. My work mainly involves managing frontend workflows and ensuring the application behaves correctly while building responsive, accessible, and scalable web applications.\n\nIn a recent project, I worked directly with the client to understand requirements, coordinated with different teams, implemented features, and handled bug fixes and accessibility improvements. In another project, I translated design mockups into responsive UI, optimized performance, and enhanced the overall user experience while collaborating closely with backend and design teams.\n\nI also focus on building reusable and maintainable UI components. For example, I developed a reusable table component used across multiple screens and a tokenizer-style search component for selecting guests and locations across different workflows.\n\nScalable means that the frontend code and components are designed so they can grow easily as the application adds more features, users, or screens without needing major rewrites.\n- Reusable components: Components can be used in multiple places. Example: A table component used for guest lists, visits, reports, etc.\n- Easy to extend: If a new feature is added, you can extend the existing component instead of rewriting it.",
+    "_key_points_old": [
       "7+ years of frontend development experience",
       "Builds responsive, accessible, and scalable web applications",
       "Works directly with clients and coordinates across teams",
@@ -16,12 +25,19 @@
   {
     "topic": "Projects Worked",
     "subtopic": "CORE and features worked",
-    "description": "CORE is an internal desktop application used by Apple advisors to log and track customer issues coming from chat, email, and phone calls. Through CORE, advisors can document customer concerns, categorize each issue, and monitor the progress of tickets from creation to resolution.",
+    "description": "CORE is an internal desktop application used by Apple advisors to log and track customer issues coming from chat, email, and phone calls. Through CORE, advisors can document customer concerns, categorize each issue, and monitor the progress of tickets from creation to resolution.\n\nMy role includes both technical leadership and product ownership responsibilities. On the technical side, I lead frontend feature delivery using Vue 3 and coordinate API integrations with backend teams.\n\nFrom a product perspective, I work closely with stakeholders to understand pain points, analyze Radar analytics data, prioritize backlog items, and convert requirements into actionable user stories.\n\nI also facilitate Agile ceremonies, manage sprint planning discussions, and ensure alignment between engineering and business teams.",
     "key_points": [
       "Internal enterprise desktop application",
       "Used by advisors for issue tracking",
       "Supports chat, email, and phone channels",
-      "End-to-end ticket lifecycle management"
+      "End-to-end ticket lifecycle management",
+      "Technical leadership and product ownership responsibilities",
+      "Lead frontend feature delivery using Vue 3",
+      "Coordinate API integrations with backend teams",
+      "Work with stakeholders to understand pain points and analyze Radar analytics data",
+      "Prioritize backlog items and convert requirements into actionable user stories",
+      "Facilitate Agile ceremonies and manage sprint planning discussions",
+      "Ensure alignment between engineering and business teams"
     ]
   },
   {
@@ -38,7 +54,7 @@
   },
   {
     "topic": "Projects Worked",
-    "subtopic": "VIMS – Visitor Management System",
+    "subtopic": "VIMS \u2013 Visitor Management System",
     "description": "VIMS (Visitor Management System) is internal app used by apple, but it also supports external use cases. It is used to schedule office visits and meetings, and to manage guest access across Apple buildings. VIMS acts as a central platform for organizing workplace visits efficiently. It is a multi-platform system accessed via Web, Mobile, iPad Kiosk, and Admin Portal interfaces, all of which share a single backend to ensure consistent data and access control.",
     "key_points": [
       "Multi-platform system (Web, Mobile, Kiosk, Admin)",
@@ -79,10 +95,10 @@
     "subtopic": "First 2 Days Without Team Support",
     "description": "I'll explore the codebase, set up the environment, and go through the application and documentation like Confluence pages. I'll try to understand the project workflows, architecture and tools used, and note down any questions so I'm ready to clarify once the team is available.",
     "key_points": [
-      "Understand the project – read documentation, architecture diagrams, and requirements",
-      "Set up the environment – clone repositories, install dependencies, and run the application locally",
-      "Explore the codebase – understand folder structure, main modules, and how components interact",
-      "Identify tools and processes – check version control, CI/CD pipelines, testing frameworks, and coding standards"
+      "Understand the project \u2013 read documentation, architecture diagrams, and requirements",
+      "Set up the environment \u2013 clone repositories, install dependencies, and run the application locally",
+      "Explore the codebase \u2013 understand folder structure, main modules, and how components interact",
+      "Identify tools and processes \u2013 check version control, CI/CD pipelines, testing frameworks, and coding standards"
     ]
   },
   {
@@ -95,6 +111,19 @@
       "ARIA attributes implementation",
       "Passed accessibility audits",
       "Practical hands-on accessibility learning"
+    ]
+  },
+  {
+    "topic": "Challenges Faced",
+    "subtopic": "Taking Over DMS Project Leadership Close to Production",
+    "description": "One major challenge I faced was during the DMS project when there was no proper technical lead handling the application, and ownership was moved to me close to production deployment with only around 1 to 1.5 months left. The application was in a very unstable state, and many modules were not functioning correctly.\n\nInitially, we assumed most issues were from the frontend side and that backend APIs were stable. I took ownership of grooming stories, planning the work, prioritizing critical flows, and coordinating the team to rewrite major parts of the frontend application along with new feature implementation.\n\nWe were able to stabilize the UI and prepare the application with only minor bugs remaining. However, during final workflows like shipment submission and reassignment, we discovered major backend API issues that were impacting core functionality and delaying production delivery.\n\nThe biggest challenge was communicating these unexpected dependencies and delays to stakeholders while coordinating multiple teams under tight timelines. From this experience, I learned the importance of early end-to-end integration validation, dependency tracking, and proactive risk communication instead of assuming downstream systems are stable.",
+    "key_points": [
+      "Took ownership of unstable DMS project 1-1.5 months before production",
+      "Planned work, prioritized critical flows, and coordinated UI stabilization",
+      "Discovered major backend API issues during final workflow testing",
+      "Challenging to communicate delays and coordinate teams under tight deadlines",
+      "Learned the importance of early end-to-end integration validation and dependency tracking",
+      "Learned proactive risk communication instead of assuming downstream stability"
     ]
   },
   {
@@ -151,7 +180,7 @@
   {
     "topic": "Performance Optimization",
     "subtopic": "What is Bundler and Why We Need It",
-    "description": "Vite or Webpack are used because browsers do not directly understand multiple module files like import/export (in older environments), .vue single-file components, SCSS, or some modern JavaScript features. At that point, we use bundlers like Vite or Webpack.\n\nA bundler takes multiple source files such as .vue components, JavaScript files, CSS/SCSS files, and assets, and combines them into optimized static files that browsers can understand.\n\nThey optimize the application by:\nMinification – removing spaces, comments, and unnecessary characters\nTree shaking – removing unused code\nCode splitting – splitting bundles into smaller chunks\nAsset optimization – compressing images and static assets\nLazy loading – loading code only when required\nCache – generating hashed filenames to enable proper browser caching",
+    "description": "Vite or Webpack are used because browsers do not directly understand multiple module files like import/export (in older environments), .vue single-file components, SCSS, or some modern JavaScript features. At that point, we use bundlers like Vite or Webpack.\n\nA bundler takes multiple source files such as .vue components, JavaScript files, CSS/SCSS files, and assets, and combines them into optimized static files that browsers can understand.\n\nThey optimize the application by:\nMinification \u2013 removing spaces, comments, and unnecessary characters\nTree shaking \u2013 removing unused code\nCode splitting \u2013 splitting bundles into smaller chunks\nAsset optimization \u2013 compressing images and static assets\nLazy loading \u2013 loading code only when required\nCache \u2013 generating hashed filenames to enable proper browser caching",
     "key_points": [
       "Combines multiple source files into browser-compatible bundles",
       "Minification and tree shaking",
@@ -201,7 +230,7 @@
   },
   {
     "topic": " Cybersecurity Security",
-    "subtopic": "Authentication – IDMS",
+    "subtopic": "Authentication \u2013 IDMS",
     "description": "In our system, authentication and user identity were handled through IDMS, which is Apple's Identity Management System. When a user logs in, IDMS authenticates the user and provides identity details such as user information, roles, and group memberships. These roles and groups are then used by the application to implement authorization, ensuring that users only access features they are permitted to use.\n\nSince permissions are managed centrally in IDMS, it simplifies security management and maintains consistency across all internal Apple applications. This integration also improves security because authentication is handled by a trusted identity provider while the application focuses on enforcing role-based access within the system.",
     "key_points": [
       "IDMS is Apple's Identity Management System used for authentication",
@@ -218,12 +247,12 @@
     "subtopic": "Frontend & Backend Security (Authentication & Authorization)",
     "description": "Security in our application is handled at both the frontend and backend levels.\n\nAuthentication is managed through Apple IDMS (Identity Management System), where users log in and receive an authentication token that is sent with API requests.\n\nAuthorization is enforced on the backend using Role-Based Access Control (RBAC), which ensures users can only access resources permitted by their roles. For example, only authorized users can create visits for Priority-1 buildings.\n\nAll API communication is secured using HTTPS.\n\nOn the frontend, we follow secure coding practices such as:\n- Validating user inputs\n- Avoiding unsafe rendering like v-html to prevent XSS attacks\n- Validating file uploads such as CSV imports for correct type and format\n\nWe also monitor production issues using tools like Sentry for frontend error tracking and Splunk for centralized logging, ensuring potential issues and vulnerabilities are detected and addressed quickly.\n\nKey distinction:\n- Authentication: verifies who the user is\n- Authorization (role): determines what the authenticated user is allowed to do",
     "key_points": [
-      "Authentication via Apple IDMS – token sent with every API request",
-      "Authorization via RBAC on the backend – role-based resource access",
+      "Authentication via Apple IDMS \u2013 token sent with every API request",
+      "Authorization via RBAC on the backend \u2013 role-based resource access",
       "Example: only authorized users can create visits for Priority-1 buildings",
       "All API communication secured over HTTPS",
       "Frontend: input validation and avoiding v-html to prevent XSS",
-      "File upload validation – correct type and format (e.g. CSV imports)",
+      "File upload validation \u2013 correct type and format (e.g. CSV imports)",
       "Sentry for frontend error tracking",
       "Splunk for centralized logging and monitoring",
       "Authentication = who you are; Authorization = what you can do"
@@ -232,7 +261,7 @@
   {
     "topic": "Scenario-Based Questions",
     "subtopic": "Handling Application Lag Without Support",
-    "description": "If a user reports lag, I'll first try to reproduce the issue and identify exactly where it's happening — whether during page load, an API call, or a specific user action. Then I'll check DevTools: for Console errors or warnings, the Network tab for API issues, and if needed, the Performance tab to look for long tasks.\n\nIf I'm unable to reproduce it on my system, I'll gather more details from the user, such as browser version, and network conditions. I'll try to replicate the same environment (using throttling). I'll also check production logs or monitoring tools to see if there are slow APIs or runtime errors.\n\nOnce I identify the root cause, I'll implement the appropriate fix.",
+    "description": "If a user reports lag, I'll first try to reproduce the issue and identify exactly where it's happening \u2014 whether during page load, an API call, or a specific user action. Then I'll check DevTools: for Console errors or warnings, the Network tab for API issues, and if needed, the Performance tab to look for long tasks.\n\nIf I'm unable to reproduce it on my system, I'll gather more details from the user, such as browser version, and network conditions. I'll try to replicate the same environment (using throttling). I'll also check production logs or monitoring tools to see if there are slow APIs or runtime errors.\n\nOnce I identify the root cause, I'll implement the appropriate fix.",
     "key_points": [
       "Reproduce the issue and identify the exact location",
       "Check DevTools Console, Network, and Performance tabs",
@@ -275,7 +304,7 @@
     "key_points": [
       "Makes work faster and more efficient",
       "Used for quick summaries, ideas, documentation, code analysis",
-      "Flow: plan the task → ask for missing details → review and edit",
+      "Flow: plan the task \u2192 ask for missing details \u2192 review and edit",
       "Review and refine output until it meets requirements"
     ]
   },
@@ -359,8 +388,94 @@
       "Initiated a private, respectful conversation",
       "Framed it as wanting to help, not criticize",
       "Used specific examples to make feedback clear",
-      "Discovered they were overwhelmed — helped with prioritization",
+      "Discovered they were overwhelmed \u2014 helped with prioritization",
       "Work improved significantly after the conversation"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "Breaking Down Work into Tasks",
+    "description": "I break work into smaller and manageable tasks based on priority and dependencies.\nFirst, I understand the requirement with stakeholders and the development team. Then I divide the feature into user stories, UI tasks, API integration tasks, testing tasks, and deployment activities. I also estimate effort, identify blockers early, and assign tasks clearly so the team can deliver smoothly within the sprint.",
+    "key_points": [
+      "Break work into smaller, manageable tasks based on priority and dependencies",
+      "Understand requirements with stakeholders and the development team",
+      "Divide features into user stories, UI, API, testing, and deployment tasks",
+      "Estimate effort and identify blockers early",
+      "Assign tasks clearly for smooth sprint delivery"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "Conducting Sprint Planning",
+    "description": "I conduct sprint planning by first reviewing the backlog and understanding priorities. Then I break features into smaller user stories and tasks, estimate effort with the team, identify dependencies or blockers, and assign work based on team capacity and skills. I also make sure the sprint goals are clear and achievable so the team can deliver efficiently within the timeline.",
+    "key_points": [
+      "Review the backlog and understand priorities",
+      "Break features into smaller user stories and tasks",
+      "Estimate effort with the team",
+      "Identify dependencies or blockers",
+      "Assign work based on team capacity and skills",
+      "Ensure sprint goals are clear and achievable"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "Helping a Team Member Who Does Not Ask for Help",
+    "description": "I usually observe team collaboration, task progress, blockers, and changes in delivery timelines. If I notice someone struggling with dependencies, repeated issues, missed estimates, or reduced participation in discussions, I proactively connect with them to understand the challenge and provide support.\nFor example, if a developer is blocked on API integration or production issues, I step in by helping clarify requirements, coordinating with backend teams, or assisting with debugging so the sprint delivery is not impacted. I believe early support and open communication help the team work more efficiently and avoid delays.",
+    "key_points": [
+      "Observe collaboration, progress, blockers, and timelines",
+      "Spot signs like missed estimates or reduced participation",
+      "Proactively connect to understand challenges and provide support",
+      "Help clarify requirements, coordinate with backend, or assist with debugging",
+      "Believe early support and open communication prevent delays"
+    ]
+  },
+  {
+    "topic": "Scenario-Based Questions",
+    "subtopic": "Why are you looking for a change currently?",
+    "description": "Recently, I joined a banking production support project where I help the team handle vulnerability changes, version upgrades, client coordination, and deployment process improvements. While working on this project, I realized I\u2019m more interested in technical product strategy, stakeholder management, and driving scalable product initiatives. With my experience working on enterprise platforms, I now want to work on product initiatives, especially in this fast-growing AI-driven technology space.",
+    "key_points": [
+      "Currently in a banking production support project",
+      "Handling vulnerability changes, version upgrades, client coordination, and deployment process improvements",
+      "Realized interest lies more in technical product strategy and stakeholder management",
+      "Desire to drive scalable product initiatives",
+      "Passionate about working in the fast-growing AI-driven technology space"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "How did you improve sprint velocity by 40%?",
+    "description": "When I joined the VIMS/DMS project, the team faced issues like unclear requirements, frequent scope changes, inconsistent coding practices, and excessive rework.\n\nI introduced multiple process improvements:\n- better sprint planning sessions\n- clearer acceptance criteria\n- backlog grooming before sprint kickoff\n- stricter code review standards\n- reusable UI patterns\n- dependency tracking across teams\n\nI also improved communication between stakeholders and developers to reduce ambiguity.\n\nAs a result, the team reduced rework significantly, improved estimation accuracy, and sprint velocity improved by around 40% over multiple release cycles.",
+    "key_points": [
+      "Identified issues: unclear requirements, scope changes, inconsistent practices, excessive rework",
+      "Introduced process improvements (sprint planning, acceptance criteria, backlog grooming)",
+      "Enforced stricter code review standards and reusable UI patterns",
+      "Tracked dependencies across teams",
+      "Improved stakeholder-developer communication to reduce ambiguity",
+      "Result: Reduced rework, improved estimation, increased velocity by ~40%"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "What is your leadership style?",
+    "description": "My leadership style is collaborative and ownership-driven.\n\nI believe in creating clarity for teams, removing blockers, encouraging open communication, and supporting team members when needed.\n\nI also focus heavily on accountability and process discipline while ensuring engineers feel empowered to contribute ideas and improvements.",
+    "key_points": [
+      "Leadership style: Collaborative and ownership-driven",
+      "Focus on clarity, removing blockers, and open communication",
+      "Support team members when needed",
+      "Emphasize accountability and process discipline",
+      "Empower engineers to contribute ideas and improvements"
+    ]
+  },
+  {
+    "topic": "Agile & Team Collaboration",
+    "subtopic": "Explain your Agile planning process.",
+    "description": "My Agile planning process typically includes:\n- Backlog grooming with stakeholders\n- Requirement clarification sessions\n- Story breakdown with engineering\n- Effort estimation\n- Dependency identification\n- Sprint planning\n- Daily standups and progress tracking\n- Sprint review and retrospective\n\nI ensure stories are properly refined before entering a sprint, with clear acceptance criteria and dependency visibility.",
+    "key_points": [
+      "Backlog grooming and requirement clarification",
+      "Story breakdown, effort estimation, and dependency identification",
+      "Sprint planning, daily standups, and progress tracking",
+      "Sprint review and retrospective",
+      "Ensure stories are refined with clear acceptance criteria and dependency visibility before the sprint"
     ]
   },
   {
@@ -380,10 +495,10 @@
     "subtopic": "Key Features of Vue.js",
     "description": "Vue.js provides several key features including reactivity for automatic UI updates when data changes, reusable components, directives for binding values to DOM, Virtual DOM for efficient rendering, computed properties and watchers, and support for Vue Router and Pinia for state management.",
     "key_points": [
-      "Reactivity — automatic UI updates when data changes",
-      "Components — reusable UI elements",
-      "Directives — v-if, v-model, etc.",
-      "Virtual DOM — efficient UI re-rendering",
+      "Reactivity \u2014 automatic UI updates when data changes",
+      "Components \u2014 reusable UI elements",
+      "Directives \u2014 v-if, v-model, etc.",
+      "Virtual DOM \u2014 efficient UI re-rendering",
       "Computed properties & watchers",
       "Vue Router & Pinia support"
     ]
@@ -721,13 +836,14 @@
   {
     "topic": "Error Handling",
     "subtopic": "Error Handling in Vue Applications",
-    "description": "Error handling is done at multiple levels. At the API level, we use Axios interceptors to handle common errors like authentication failures. At the component level, we use try/catch blocks to manage UI-specific errors. And, we use Vue's global error handler to catch unexpected runtime errors and log them to monitoring tools such as Sentry. We also manage error and loading states through Pinia or Vuex.\n\nGlobal Application Error Handling: We define it in main.js when creating the Vue app instance using app.config.errorHandler, before mounting the application.\n\nCompanies install the Sentry Vue SDK and initialize it in main.js while creating the Vue app instance.",
+    "description": "Error handling should be implemented at multiple levels to ensure application stability, security, and a smooth user experience. Common errors like authentication failures, API failures, validation issues, and runtime exceptions should be handled through centralized error handling mechanisms, middleware/interceptors, and proper exception management.\n\nWe also maintain proper error and loading states, use meaningful error responses with correct status codes, and ensure sensitive information is not exposed. For monitoring and debugging, production errors are logged using tools like Sentry or other monitoring systems to quickly identify and resolve issues.\n\nFrom a TPM perspective, I ensure teams follow standardized error handling practices so applications remain scalable, reliable, and easier to maintain across different systems and services.",
     "key_points": [
-      "API level: Axios interceptors",
-      "Component level: try/catch blocks",
-      "Global error handler in main.js",
-      "Sentry for production monitoring",
-      "State management for error/loading states"
+      "Implement error handling at multiple levels for stability, security, and UX",
+      "Handle authentication, API, validation, and runtime errors centrally via middleware/interceptors",
+      "Maintain proper error and loading states with correct HTTP status codes",
+      "Prevent sensitive information exposure in error messages",
+      "Log production errors using tools like Sentry for monitoring and debugging",
+      "TPM Perspective: Ensure teams follow standardized error handling practices for scalability and reliability"
     ]
   },
   {
@@ -805,7 +921,7 @@
   {
     "topic": "JavaScript",
     "subtopic": "this Keyword",
-    "description": "In JavaScript, the value of this isn't fixed; it is determined by how a function is called, not where it is defined—unless you're using arrow functions.",
+    "description": "In JavaScript, the value of this isn't fixed; it is determined by how a function is called, not where it is defined\u2014unless you're using arrow functions.",
     "key_points": [
       "Value determined by how function is called",
       "Not determined by where it's defined",
@@ -816,7 +932,7 @@
   {
     "topic": "JavaScript",
     "subtopic": "Call Stack",
-    "description": "The call stack is a data structure used by JavaScript (or any language) to keep track of function execution. It works like a stack (LIFO – Last In, First Out).",
+    "description": "The call stack is a data structure used by JavaScript (or any language) to keep track of function execution. It works like a stack (LIFO \u2013 Last In, First Out).",
     "key_points": [
       "Tracks function execution",
       "LIFO (Last In, First Out) structure",
@@ -851,7 +967,7 @@
   {
     "topic": "JavaScript",
     "subtopic": "Promises and Async/Await",
-    "description": "Promises are used to handle asynchronous operations. They either resolve with a value or reject with an error. It represents a value that may be available now, later, or never. Promises replace nested callbacks with .then() and .catch() to make code cleaner.\n\nasync/await is built on top of Promises. It makes asynchronous code look like normal synchronous code and returns a promise.\n\nasync → marks a function as asynchronous and it returns a Promise\nawait → waits for the Promise to resolve",
+    "description": "Promises are used to handle asynchronous operations. They either resolve with a value or reject with an error. It represents a value that may be available now, later, or never. Promises replace nested callbacks with .then() and .catch() to make code cleaner.\n\nasync/await is built on top of Promises. It makes asynchronous code look like normal synchronous code and returns a promise.\n\nasync \u2192 marks a function as asynchronous and it returns a Promise\nawait \u2192 waits for the Promise to resolve",
     "key_points": [
       "Promises handle async operations",
       "Resolve with value or reject with error",
@@ -865,7 +981,7 @@
   {
     "topic": "JavaScript",
     "subtopic": "async, defer, preload, prefetch",
-    "description": "async → Loads script in parallel and executes immediately after download. <script>\n\ndefer → Loads script in parallel and executes after HTML parsing. <script>\n\npreload → Downloads important resources early. <link>\n\nprefetch → Downloads future resources during idle time (low priority). <link>",
+    "description": "async \u2192 Loads script in parallel and executes immediately after download. <script>\n\ndefer \u2192 Loads script in parallel and executes after HTML parsing. <script>\n\npreload \u2192 Downloads important resources early. <link>\n\nprefetch \u2192 Downloads future resources during idle time (low priority). <link>",
     "key_points": [
       "async: parallel load, immediate execution",
       "defer: parallel load, execute after HTML parsing",
@@ -876,7 +992,7 @@
   {
     "topic": "CSS",
     "subtopic": "Responsive Website",
-    "description": "I use a mobile-first approach with flexible layouts using Flexbox and CSS Grid. I rely on relative units like %, rem, and vw instead of fixed pixels. I use media queries to adapt layouts for different screen sizes and ensure images scale properly. I also test across devices using Chrome DevTools and real devices to verify consistent behavior.\n\nI also ensure that responsiveness includes not just layout but usability — for example, touch-friendly button sizes, readable font sizes.\n\nIs responsiveness only about screen size? - No. It also includes: Device orientation, Touch interactions, Accessibility considerations.\n\nResponsiveness is not just about adapting layout to different screen sizes; it also includes performance and smooth interaction. On mobile devices especially, slower networks can impact performance. So while I use flexible layouts and media queries for responsive design, I also optimize bundle size, use lazy loading, reduce unnecessary re-renders, and optimize images. This ensures the application not only looks good on all devices but also feels fast and smooth.",
+    "description": "I use a mobile-first approach with flexible layouts using Flexbox and CSS Grid. I rely on relative units like %, rem, and vw instead of fixed pixels. I use media queries to adapt layouts for different screen sizes and ensure images scale properly. I also test across devices using Chrome DevTools and real devices to verify consistent behavior.\n\nI also ensure that responsiveness includes not just layout but usability \u2014 for example, touch-friendly button sizes, readable font sizes.\n\nIs responsiveness only about screen size? - No. It also includes: Device orientation, Touch interactions, Accessibility considerations.\n\nResponsiveness is not just about adapting layout to different screen sizes; it also includes performance and smooth interaction. On mobile devices especially, slower networks can impact performance. So while I use flexible layouts and media queries for responsive design, I also optimize bundle size, use lazy loading, reduce unnecessary re-renders, and optimize images. This ensures the application not only looks good on all devices but also feels fast and smooth.",
     "key_points": [
       "Mobile-first approach",
       "Flexbox and CSS Grid for layouts",
@@ -937,7 +1053,7 @@
   {
     "topic": "CSS",
     "subtopic": "Media Queries, Flexbox, and Grid",
-    "description": "Media queries decide when the layout should change based on screen size. Flexbox manages alignment and spacing in one direction. CSS Grid, on the other hand, is used to define the overall two-dimensional layout structure — rows and columns together. It is especially useful for page layouts, dashboards, or complex designs where both horizontal and vertical control are needed.",
+    "description": "Media queries decide when the layout should change based on screen size. Flexbox manages alignment and spacing in one direction. CSS Grid, on the other hand, is used to define the overall two-dimensional layout structure \u2014 rows and columns together. It is especially useful for page layouts, dashboards, or complex designs where both horizontal and vertical control are needed.",
     "key_points": [
       "Media queries: decide when layout changes",
       "Flexbox: one-dimensional alignment and spacing",
@@ -972,7 +1088,7 @@
   {
     "topic": "Frontend Architecture and Design",
     "subtopic": "Frontend Architecture vs Design System vs System Design",
-    "description": "Frontend Architecture is about how the application is built — its technical structure. It includes folder structure, state management, routing, API handling, and how components are organized.\n\nDesign System is about how the application looks and feels. It defines the visual style and UI rules, including which UI components to use, typography, spacing, and colors.\n\nFrontend system design is a high-level approach to plan and structure the entire frontend application. It includes architecture for technical structure, design system for consistent UI, and also considers performance, scalability, security, and how the frontend interacts with backend APIs.",
+    "description": "Frontend Architecture is about how the application is built \u2014 its technical structure. It includes folder structure, state management, routing, API handling, and how components are organized.\n\nDesign System is about how the application looks and feels. It defines the visual style and UI rules, including which UI components to use, typography, spacing, and colors.\n\nFrontend system design is a high-level approach to plan and structure the entire frontend application. It includes architecture for technical structure, design system for consistent UI, and also considers performance, scalability, security, and how the frontend interacts with backend APIs.",
     "key_points": [
       "Architecture: technical structure",
       "Design System: visual style and UI rules",
